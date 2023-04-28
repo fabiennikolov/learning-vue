@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  --uno: block text-2xl font-bold mb-3;
+}
+
+h3 {
+    --uno: block text-xl font-bold mb-3;
+}

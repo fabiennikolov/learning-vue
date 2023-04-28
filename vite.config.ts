@@ -1,4 +1,5 @@
 import { URL, fileURLToPath } from 'node:url'
+import UnoCSS from 'unocss/vite'
 import Pages from 'vite-plugin-pages'
 
 import { defineConfig } from 'vite'
@@ -9,6 +10,7 @@ export default defineConfig({
   plugins: [
     vue(),
     Pages(),
+    UnoCSS(),
   ],
   resolve: {
     alias: {
