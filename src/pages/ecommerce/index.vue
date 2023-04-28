@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section space-y-6 p-4 m-5>
     <article>
       <img src="https://via.placeholder.com/300x200.png?text=Product+1" alt="Product 1">
       <h3>Product 1</h3>

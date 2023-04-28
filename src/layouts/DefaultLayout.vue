@@ -53,15 +53,14 @@ nav > *:not(:first-child) {
 }
 
 nav a {
-  color: #8abcbc;
-  text-decoration-color: transparent;
+  --uno: text-[#8abcbc] hover:text-lime underline;
   transition-property: text-decoration-color, color;
   transition-duration: 500ms;
   transition-timing-function: ease;
 }
 
 nav a:hover {
-  color: greenyellow;
+  /* color: greenyellow; */
   text-decoration-color: greenyellow;
 }
 /* section {
@@ -81,11 +80,5 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
-}
-</style>
-
-<style scoped>
-.capitalize {
-  text-transform: capitalize;
 }
 </style>

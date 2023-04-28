@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section space-y-6 p-4 m-5>
     <h2>Welcome to my website</h2>
     <p>This is a sample website layout using HTML and CSS.</p>
     <article>
@@ -22,16 +22,8 @@
 </template>
 
 <style scoped>
- section {
-  margin: 20px;
-  padding: 10px;
-}
-
 article {
-  border: 1px solid #ddd;
-  margin: 10px;
-  padding: 10px;
-
+  --at-apply: pl-6 b-l-(1 slate-3);
 }
 </style>
 

@@ -4,24 +4,20 @@ import DefaultLayout from './layouts/DefaultLayout.vue'
 </script>
 
 <template>
-  <DefaultLayout class="body-extend">
+  <DefaultLayout class="body-extend min-h-screen flex flex-col justify-between">
     <RouterView />
   </DefaultLayout>
 </template>
 
 <style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+
 </style>
 
 <style scoped>
 .body-extend {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* min-height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
 }
 </style>
