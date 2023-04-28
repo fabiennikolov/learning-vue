@@ -1,24 +1,22 @@
-<template>
-  <section space-y-6 p-4 m-5>
-    <article>
-      <img src="https://via.placeholder.com/300x200.png?text=Product+1" alt="Product 1">
-      <h3>Product 1</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, lectus eget convallis congue, sem
-        purus accumsan tortor, eget malesuada arcu elit non elit. Nulla vel malesuada massa.
-      </p>
-      <p><strong>BGN19.99</strong></p>
-      <button>Add to Cart</button>
-    </article>
+<script setup lang="ts">
+import { ref } from 'vue'
+import Card from '@/components/Card.vue'
 
-    <article>
-      <img src="https://via.placeholder.com/300x200.png?text=Product+2" alt="Product 2">
-      <h3>Product 2</h3>
-      <p>
-        Phasellus eget mi lacus. Maecenas sed nibh tortor. Integer consequat lacus nec metus dignissim, ut mollis
-        nisl auctor. Nullam vel augue id velit dictum semper.
-      </p>
-    </article>
+const products = ref<ProductCardData[]>([
+  { name: 'Product 1', image: 'Product+1', price: 13.99, description: 'adasd sadsad sdsadsdsdsdssdsa' },
+  { name: 'Product 2', image: 'Product+2', price: 20.99, description: 'adasd sadsad sdsadsdsdsdssdsa' },
+  { name: 'Product 3', image: 'Product+3', price: 110.99, description: 'adasd sadsad sdsadsdsdsdssdsa' },
+  { name: 'Product 4', image: 'Product+4', price: 54.99, description: 'adasd sadsad sdsadsdsdsdssdsa' },
+])
+</script>
+
+<template>
+  <section flex items-center gap-4 flex-wrap>
+    <Card
+      v-for="product in products" :key="product.name"
+      v-bind="product" :image="`https://via.placeholder.com/600x400?text=${product.image}`"
+      :to="`/ecommerce/${product.name.split(' ')[1]}`"
+    />
   </section>
 </template>
 

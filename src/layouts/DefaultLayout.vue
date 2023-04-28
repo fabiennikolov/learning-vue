@@ -10,7 +10,7 @@ const navItems = computed(() => {
 <template>
   <div>
     <header>
-      <h1>My Website</h1>
+      <h1 my-5>My Website</h1>
       <nav>
         <RouterLink
           v-for="route in navItems" :key="route.name"
