@@ -1,24 +1,86 @@
 <script setup lang="ts">
-import router from '@/router';
-
-router.getRoutes()
+import router from '@/router'
 </script>
 
 <template>
-<div>
-    <ul>
-      <li v-for="route in router.getRoutes()" :key="route.name">
-        <RouterLink :to="route.path" class="capitalize"> {{ route.name }} </RouterLink>
-      </li>
-    </ul>
-    <main class="bg-red">
-        <slot></slot>
-    </main>
-</div>
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <RouterLink
+        v-for="route in router.getRoutes()" :key="route.name"
+        :to="route.path" class="capitalize"
+      >
+        {{ route.name }}
+      </RouterLink>
+    </nav>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+  </footer>
 </template>
 
+<style>
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; */
+}
+
+nav > *:not(:first-child) {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: #8abcbc;
+  text-decoration-color: transparent;
+  transition-property: text-decoration-color, color;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+
+nav a:hover {
+  color: greenyellow;
+  text-decoration-color: greenyellow;
+}
+/* section {
+  margin: 20px;
+  padding: 10px;
+
+} */
+
+/* article {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+} */
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+
 <style scoped>
-.bg-red {
-    background-color: red;
+.capitalize {
+  text-transform: capitalize;
 }
 </style>

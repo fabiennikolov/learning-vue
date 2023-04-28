@@ -1,21 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
-import router from '@/router';
-import DefaultLayout from '@/layouts/DefaultLayout.vue';
+
 </script>
 
 <template>
-  <main>   
-    <TheWelcome />
-
-    <DefaultLayout>
-      qweqwewqqwwqe
-    </DefaultLayout>
-  </main>
+  <div class="home">
+    <h1>This is a home page</h1>
+  </div>
 </template>
-
-<style scoped>
-.capitalize {
-  text-transform: capitalize;
-}
-</style>
