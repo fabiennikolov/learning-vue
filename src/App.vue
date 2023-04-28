@@ -4,7 +4,7 @@ import DefaultLayout from './layouts/DefaultLayout.vue'
 </script>
 
 <template>
-  <DefaultLayout>
+  <DefaultLayout class="body-extend">
     <RouterView />
   </DefaultLayout>
 </template>
@@ -14,11 +14,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+}
+</style>
+
+<style scoped>
+.body-extend {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* display: grid;
-  grid-template-rows: auto minmax(100px, 1fr) auto; */
 }
 </style>

@@ -3,25 +3,25 @@ import router from '@/router'
 </script>
 
 <template>
-  <header>
-    <h1>My Website</h1>
-    <nav>
-      <RouterLink
-        v-for="route in router.getRoutes()" :key="route.name"
-        :to="route.path" class="capitalize"
-      >
-        {{ route.name }}
-      </RouterLink>
-    </nav>
-  </header>
-
-  <main>
-    <slot />
-  </main>
-
-  <footer>
-    <p>&copy; 2023 My Website. All rights reserved.</p>
-  </footer>
+  <div>
+    <header>
+      <h1>My Website</h1>
+      <nav>
+        <RouterLink
+          v-for="route in router.getRoutes()" :key="route.name"
+          :to="route.path" class="capitalize"
+        >
+          {{ route.name }}
+        </RouterLink>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+  </div>
 </template>
 
 <style>
