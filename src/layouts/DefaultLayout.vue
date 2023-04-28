@@ -1,5 +1,10 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import router from '@/router'
+
+const navItems = computed(() => {
+  return router.getRoutes().filter(route => route.meta.showOnNavbar)
+})
 </script>
 
 <template>
@@ -8,7 +13,7 @@ import router from '@/router'
       <h1>My Website</h1>
       <nav>
         <RouterLink
-          v-for="route in router.getRoutes()" :key="route.name"
+          v-for="route in navItems" :key="route.name"
           :to="route.path" class="capitalize"
         >
           {{ route.name }}

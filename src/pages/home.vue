@@ -34,3 +34,8 @@ article {
 
 }
 </style>
+
+<route lang="yaml">
+meta:
+  showOnNavbar: true
+</route>

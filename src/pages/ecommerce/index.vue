@@ -21,3 +21,8 @@
     </article>
   </section>
 </template>
+
+<route lang="yaml">
+meta:
+  showOnNavbar: true
+</route>
