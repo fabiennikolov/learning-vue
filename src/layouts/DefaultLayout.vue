@@ -77,7 +77,7 @@ nav a {
 }
 
 nav a:hover {
-   color: greenyellow;
+  color: greenyellow;
   text-decoration-color: greenyellow;
   text-decoration: underline;
 }
@@ -88,8 +88,9 @@ nav a:hover {
 }
 .container {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 1rem;
+  min-width: auto;
 }
 
 article {
