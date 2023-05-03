@@ -3,10 +3,10 @@ import { ref } from 'vue'
 import Card from '@/components/Card.vue'
 
 const products = ref<ProductCardData[]>([
-  { name: 'Product 1', image: 'Product+1', price: 13.99, description: 'adasd sadsad sdsadsdsdsdssdsa' },
-  { name: 'Product 2', image: 'Product+2', price: 20.99, description: 'adasd sadsad sdsadsdsdsdssdsa' },
-  { name: 'Product 3', image: 'Product+3', price: 110.99, description: 'adasd sadsad sdsadsdsdsdssdsa' },
-  { name: 'Product 4', image: 'Product+4', price: 54.99, description: 'adasd sadsad sdsadsdsdsdssdsa' },
+  { name: 'Product 1', image: 'Product+1', price: 13.99, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque risus aliquet sagittis iaculis.' },
+  { name: 'Product 2', image: 'Product+2', price: 20.99, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque risus aliquet sagittis iaculis.' },
+  { name: 'Product 3', image: 'Product+3', price: 110.99, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque risus aliquet sagittis iaculis.' },
+  { name: 'Product 4', image: 'Product+4', price: 54.99, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque risus aliquet sagittis iaculis.' },
 ])
 </script>
 

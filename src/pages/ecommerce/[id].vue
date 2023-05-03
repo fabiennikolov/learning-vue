@@ -14,7 +14,6 @@ const id = computed(() => route.params.id)
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, lectus eget convallis congue, sem
       purus accumsan tortor, eget malesuada arcu elit non elit. Nulla vel malesuada massa.
     </p>
-    <p><strong>BGN19.99</strong></p>
     <button>Add to Cart</button>
   </article>
 </template>
