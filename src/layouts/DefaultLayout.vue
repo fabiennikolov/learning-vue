@@ -11,9 +11,7 @@ const navItems = computed(() => {
   <div>
     <header>
       <router-link to="/home">
-        <h1 id="heading" inline-block>
-          My website
-        </h1>
+        <img src="/src/components/icons/logo.png" inline-block max-w-15 mb12px alt="Coder">
       </router-link>
       <nav>
         <RouterLink
@@ -34,25 +32,12 @@ const navItems = computed(() => {
 </template>
 
 <style>
-#heading {
-  --uno: text-[#8abcbc] hover:text-lime underline;
-  transition-property: text-decoration-color, color;
-  transition-duration: 500ms;
-  transition-timing-function: ease;
-  text-decoration: none;
-  inline-size: auto;
-  padding-bottom: 20px;
-}
 header {
   background-color: #333;
   color: white;
   padding: 20px;
   text-align: center;
 }
-#heading:hover {
-  text-decoration: underline;
-}
-
 nav {
   background-color: #444;
   color: white;
