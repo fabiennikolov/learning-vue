@@ -47,36 +47,13 @@ const cards = ref<AccountCard[]>([
 </script>
 
 <template>
-  <h2 style="text-align:center" mt25px text-4xl>
+  <h2 style="text-align:center" my5 text-5xl>
     About Me
   </h2>
+  <p my1 text-center>
+    These are some of the technologies i'm interested in.
+  </p>
   <AboutCardSection :cards="cards" />
-  <!-- <div class="mx-auto p-4 grid gap-4 lg:grid-cols-3 lt-lg:w-fit justify-items-center">
-    <AboutCard
-
-      text-lime
-    />
-    <AboutCard
-      title="HTML learner"
-      :link="{
-        label: 'Visit my GitHub account',
-        redirect: 'https://github.com/fabiennikolov/learning-vue',
-      }"
-      image="/src/components/icons/174854.png"
-      description="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-      text-orange-6
-    />
-    <AboutCard
-      title="CSS enjoyer"
-      :link="{
-        label: 'Learning unocss',
-        redirect: 'https://unocss.dev/',
-      }"
-      image="/src/components/icons/csslogo1.png"
-      description="Learning new stuffs in CSS. Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-      text-blue
-    />
-  </div> -->
 </template>
 
 <route lang="yaml">

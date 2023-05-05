@@ -21,7 +21,7 @@ defineProps<{
       <div flex flex-col items-center justify-center gap-2>
         <strong>BGN {{ price }}</strong>
         <Button>Add to Cart</Button>
-        <RouterLink v-if="to" :to="to">
+        <RouterLink v-if="to" :to="to" hover:text-blue hover:underline>
           Show details
         </RouterLink>
       </div>
