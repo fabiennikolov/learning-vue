@@ -19,6 +19,12 @@ declare global {
     link: Link
     class?: string
   }
+  interface ArticleCard {
+    title: string
+    description?: string
+    image: string
+    link: Link
+  }
 }
 
 export {}
