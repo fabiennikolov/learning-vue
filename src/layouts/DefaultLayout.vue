@@ -11,7 +11,7 @@ const navItems = computed(() => {
   <div>
     <header>
       <router-link to="/home">
-        <img src="/src/components/icons/logo.png" inline-block max-w-15 mb12px alt="Coder">
+        <img src="/src/components/icons/logo.png" inline-block max-w-15 my1 alt="">
       </router-link>
       <nav>
         <RouterLink
@@ -81,15 +81,14 @@ nav a:hover {
 article {
   border: 1px solid #ddd;
   padding: 10px;
-  max-width: 300px;
+  max-width: 25rem;
 }
 
 footer {
   background-color: #333;
   color: white;
-  padding: 20px;
   text-align: center;
-  padding: 50px;
+  padding: 5rem;
 }
 img {
   transition: transform 0.3s ease;

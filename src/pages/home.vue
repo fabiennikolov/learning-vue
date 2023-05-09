@@ -1,5 +1,8 @@
-<template>
-  <section space-y-6 p-4 m-5 inline-grid>
+<script setup lang="ts">
+</script>
+
+<template mx-auto max-w-300 p-4 grid gap-6 lg:grid-cols-4 lt-lg:w-fit justify-items-center>
+  <section flex flex-col items-center justify-center gap-2>
     <h2>Welcome to my website</h2>
     <p>This is a sample website layout using HTML and CSS.</p>
     <div class="container">
