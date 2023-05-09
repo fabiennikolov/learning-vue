@@ -8,20 +8,19 @@ const navItems = computed(() => {
 </script>
 
 <template>
-  <div>
-    <header>
+  <div class="sticky overflow-hidden ">
+    <nav>
       <router-link to="/home">
-        <img src="/src/components/icons/logo.png" inline-block max-w-15 my1 alt="">
+        <img src="/src/components/icons/logo.png" inline-block max-w-15 my2>
       </router-link>
-      <nav>
-        <RouterLink
-          v-for="route in navItems" :key="route.name"
-          :to="route.path" class="capitalize"
-        >
-          {{ route.name }}
-        </RouterLink>
-      </nav>
-    </header>
+
+      <RouterLink
+        v-for="route in navItems" :key="route.name"
+        :to="route.path" class="capitalize"
+      >
+        {{ route.name }}
+      </RouterLink>
+    </nav>
     <main>
       <slot />
     </main>
@@ -35,13 +34,12 @@ const navItems = computed(() => {
 header {
   background-color: #333;
   color: white;
-  padding: 20px;
   text-align: center;
 }
 nav {
   background-color: #444;
   color: white;
-  padding: 10px;
+  padding: 1rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -59,6 +57,8 @@ nav a {
   transition-duration: 500ms;
   transition-timing-function: ease;
   text-decoration: none;
+  display: block;
+  text-align: center;
 }
 
 nav a:hover {

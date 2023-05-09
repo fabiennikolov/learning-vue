@@ -12,9 +12,9 @@ defineProps<{
 
 <template>
   <div
-    b="1 black" p-4 sm:p-8 max-w-75 w-full overflow-hidden space-y-6
+    b="1 black" p-4 sm:p-8 max-w-75 w-full overflow-hidden space-y-6 rounded-3 bg-slate-1
   >
-    <h4 class="font-inter font-extrabold text-(2xl center) leading-relaxed">
+    <h4 class="font-(extrabold) text-(2xl center) leading-relaxed">
       {{ title }}
     </h4>
     <div flex="~ col" items-center gap-3>
