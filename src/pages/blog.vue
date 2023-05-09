@@ -9,7 +9,7 @@ const cards = ref<ArticleCard[]>([
       label: 'learn more...',
       redirect: 'https://www.crowdbotics.com/blog-tags/front-end-development',
     },
-    image: 'src/components/icons/front.webp',
+    image: 'src/components/icons/UXUIfeaturedimage-2.png',
     description: 'Front end development refers to the work that software developers do that is directly visible to the user.',
   },
   {
@@ -23,24 +23,23 @@ const cards = ref<ArticleCard[]>([
 
   },
   {
-    title: 'HTML architect',
+    title: 'AI & Machine Learning',
     link: {
-      label: 'Visit my GitHub account',
-      redirect: 'https://github.com/fabiennikolov',
+      label: 'learn more...',
+      redirect: 'https://www.crowdbotics.com/blog/chatbots-in-the-workplace-pros-cons-and-best-practices',
     },
-    image: 'src/components/icons/174854.png',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt sem eget ultricies eleifend. Nunc et dolor sed tellus luctus molestie. Fusce dapibus consequat risus ut fringilla.',
+    image: 'src/components/icons/AI---ML.png',
+    description: 'Whether you love them or hate them, chatbots are becoming more commonplace across many different industries. But should you implement this software at your organization?',
 
   },
   {
-    title: 'CSS enjoyer',
+    title: 'What is App Usability Testing?',
     link: {
-      label: 'Learning new stuff in CSS',
-      redirect: 'https://unocss.dev/',
+      label: 'learn more...',
+      redirect: 'https://www.crowdbotics.com/blog/a-guide-to-mobile-app-usability-testing-methods-tools-and-best-practices',
     },
-    image: 'src/components/icons/csslogo1.png',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt sem eget ultricies eleifend. Nunc et dolor sed tellus luctus molestie. Fusce dapibus consequat risus ut fringilla.',
-
+    image: 'src/components/icons/UX-UI-2.png',
+    description: 'Usability testing is a powerful tool you can use to evaluate the functionality of your mobile application and helps you ensure that users are able to navigate your app efficiently and effectively.',
   },
 ])
 </script>
