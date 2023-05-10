@@ -14,8 +14,13 @@ const navItems = computed(() => {
         <img src="/src/components/icons/logo.png" inline-block max-w-15 my2>
       </router-link>
 
+      <router-link to="/home">
+        Home
+      </router-link>
+
       <RouterLink
-        v-for="route in navItems" :key="route.name"
+        v-for="route in navItems"
+        :key="route.name"
         :to="route.path" class="capitalize"
       >
         {{ route.name }}
