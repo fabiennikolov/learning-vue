@@ -5,7 +5,7 @@
   <div
     class="p-4 sm:p-8 max-w-300 w-full
     overflow-hidden bg-slate-2
-    space-y-6 ma mb-3"
+    space-y-6 ma mb-3 rounded-3 b-3 b-slate-3"
   >
     <h1 text-40px my-2 ml3 text-5xl>
       Hi, I'm Fab
@@ -18,7 +18,7 @@
       </p>
     </div>
   </div>
-  <div class="bg-slate-2 text-center max-w-300 ma w-full">
+  <div class="bg-slate-2 text-center max-w-300 ma w-full rounded-3 b-3 b-slate-3">
     <div
       class=" space-x-3"
     >
