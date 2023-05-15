@@ -10,10 +10,11 @@
     <h1 text-40px my-2 ml3 text-5xl>
       Hi, I'm Fab
     </h1>
-    <div text-xl grid gap-4 ml3 leading-10 text-7>
+    <div text-xl grid gap-4 ml3 leading-10 text-5 tracking-wider>
       <p mt1rem>
         I'm learning web development using Vue3. In my spare time I enjoy playing chess and building my own projects.
-        I'm on <a class="hover:text-red5 hover:no-underline text-blue-7 underline" href="https://github.com/fabiennikolov" target="_blank">GitHub</a><br>
+        <br> I'm on <a class="hover:text-red5 hover:no-underline text-blue-7" href="https://github.com/fabiennikolov" target="_blank">GitHub</a>
+        <a class="hover:text-red5 hover:no-underline text-blue-7" href="https://www.instagram.com/fabch0/" target="_blank"> instagram</a><br>
         Here in this website im creating my first responsive website layout for different type of pages
       </p>
     </div>
