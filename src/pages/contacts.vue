@@ -1,9 +1,16 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const title = ref('Contacts')
+const msg = ref('Let me know if you have any questions.')
+</script>
+
 <template>
   <h2 text-center my5 text-5xl class="">
-    Contacts
+    {{ title }}
   </h2>
-  <p text-center my1>
-    Let me know if you have any questions.
+  <p text-center my1 text-2xl>
+    {{ msg }}
   </p>
   <div px-2 md:px-5 lg:px-6>
     <form class="border-[#B2BDD4] bg-gray-8 text-white p-5 rounded-2 max-w-200 mx-auto my-2rem">
