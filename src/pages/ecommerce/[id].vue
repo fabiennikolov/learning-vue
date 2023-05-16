@@ -2,7 +2,7 @@
 import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
-const description = ref('Lorem ipsum asdajlwijalwijfalisjf')
+const description = ref('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
 
 const route = useRoute()
 const id = computed(() => route.params.id)
