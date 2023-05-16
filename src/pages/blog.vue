@@ -2,6 +2,9 @@
 import { ref } from 'vue'
 import ArticleCardSection from '@/components/ArticleCardSection.vue'
 
+const title = ref('Articles that might be helpful')
+const description = ref('Theese are some of the topics i am interested in.')
+
 const cards = ref<ArticleCard[]>([
   {
     title: 'What is Front End Development?',
@@ -45,11 +48,11 @@ const cards = ref<ArticleCard[]>([
 </script>
 
 <template>
-  <h2 style="text-align:center" my5 text-5xl>
-    Articles
+  <h2 style="text-align:center" my5 text-4xl>
+    {{ title }}
   </h2>
-  <p my1 text-center>
-    These are some of the topics i'm interested in.
+  <p my1 text-center text-6>
+    {{ description }}
   </p>
   <ArticleCardSection :cards="cards" />
 </template>
