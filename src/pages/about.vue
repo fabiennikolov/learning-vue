@@ -2,6 +2,9 @@
 import { ref } from 'vue'
 import AboutCardSection from '@/components/AboutCardSection.vue'
 
+const title = ref('About me')
+const description = ref('These are some of the technologies i am interested in.')
+
 const cards = ref<AccountCard[]>([
   {
     title: 'Vue3 Enthusiast',
@@ -48,10 +51,10 @@ const cards = ref<AccountCard[]>([
 
 <template>
   <h2 style="text-align:center" my5 text-5xl>
-    About Me
+    {{ title }}
   </h2>
   <p my1 text-center>
-    These are some of the technologies i'm interested in.
+    {{ description }}
   </p>
   <AboutCardSection :cards="cards" />
 </template>
