@@ -53,7 +53,7 @@ const cards = ref<AccountCard[]>([
   <h2 style="text-align:center" my5 text-5xl>
     {{ title }}
   </h2>
-  <p my1 text-center>
+  <p my1 text-center text-2xl>
     {{ description }}
   </p>
   <AboutCardSection :cards="cards" />
