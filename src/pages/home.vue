@@ -18,8 +18,14 @@ const msg = ref('Here in this website im creating my first responsive website la
     <div text-xl grid gap-4 ml3 leading-10 text-5 tracking-wider>
       <p mt1rem>
         {{ description }}
-        <br> I'm on <a class="hover:text-red5 hover:no-underline text-blue-7" href="https://github.com/fabiennikolov" target="_blank">GitHub</a>
-        <a class="hover:text-red5 hover:no-underline text-blue-7" href="https://www.instagram.com/fabch0/" target="_blank"> instagram</a><br>
+        <br> I'm on <a
+          class="hover:text-red5 hover:no-underline text-blue-7"
+          href="https://github.com/fabiennikolov" target="_blank"
+        >GitHub</a>
+        <a
+          class="hover:text-red5 hover:no-underline text-blue-7"
+          href="https://www.instagram.com/fabch0/" target="_blank"
+        > instagram</a><br>
         {{ msg }}
       </p>
     </div>

@@ -54,9 +54,16 @@ const msg = ref('Let me know if you have any questions.')
         </div>
       </button>
       <div class="flex mxa justify-between mt3">
-        <a class="hover:text-red5 hover:no-underline text-blue-7" href="https://github.com/fabiennikolov" target="_blank">GitHub</a>
-        <a class="hover:text-red5 hover:no-underline text-blue-7" href="https://www.instagram.com/fabch0/" target="_blank"> instagram</a>
-        <a href="tel:0897474851" class="rounded-3 b-2 py.5 px.6 hover:bg-slate-5"> <i>0897474851</i></a>
+        <a
+          class="hover:text-red5 hover:no-underline text-blue-7"
+          href="https://github.com/fabiennikolov" target="_blank"
+        >GitHub</a>
+        <a
+          class="hover:text-red5 hover:no-underline text-blue-7"
+          href="https://www.instagram.com/fabch0/" target="_blank"
+        > instagram</a>
+        <a href="tel:0897474851" class="rounded-3 b-2 py.5 px.6 hover:bg-slate-5">
+          <i>0897474851</i></a>
       </div>
     </form>
   </div>

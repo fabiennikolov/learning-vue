@@ -10,7 +10,8 @@
     <div class="uppercase text-45px text-center mt19px w100% leading-1.2em">
       <p>was not found</p>
     </div>
-    <RouterLink to="/home" text-25px uppercase bg-white position-relative display-inline-block w358px p5px mb10px mt10px rounded-3 b-black b-2 hover:bg-slate-3>
+    <RouterLink to="/home" text-25px uppercase bg-white position-relative display-inline-block
+     w358px p5px mb10px mt10px rounded-3 b-black b-2 hover:bg-slate-3>
       Go to homepage
     </RouterLink>
   </div>
