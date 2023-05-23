@@ -14,9 +14,6 @@ const msg = ref('Let me know if you have any questions.')
   </p>
   <div px-2 md:px-5 lg:px-6>
     <form class="border-[#B2BDD4] bg-gray-8 text-white p-5 rounded-2 max-w-200 mx-auto my-2rem">
-      <h1 m-b2rem pl20px>
-        Contact Form
-      </h1>
       <input
         id="Name" placeholder="Full name" class="px-5 text-white my-1 py-1 bg-transparent
       border-none focus:ring-none focus-visible:outline-none w-full truncate"
