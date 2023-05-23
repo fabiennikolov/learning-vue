@@ -30,7 +30,12 @@ const msg = ref('Let me know if you have any questions.')
           focus:border-neutral-4 focus:shadow-[0_0_0_0.2rem_var(--un-shadow-color)] resize-none placeholder:leading-5.5" placeholder="Comment..." maxlength="5000"
         />
       </div>
-      <button class="mt10 rounded-full text-black px-5 py-4 w-full relative transition-colors-250 bg-gray-7 text-white font-500 overflow-hidden hover:after:opacity-65 after:z-0 after:block after:absolute after:absolute-stretch after:transition-all-250 after:bg-image-[var(--dark-gradient)]" type="submit">
+      <button
+        class="mt10 rounded-full text-black px-5 py-4 w-full relative transition-colors-250
+       bg-gray-7 text-white font-500 overflow-hidden hover:after:opacity-65 after:z-0 after:block
+        after:absolute after:absolute-stretch after:transition-all-250
+        after:bg-image-[var(--dark-gradient)]" type="submit"
+      >
         <div class="w-full h-full relative z-1">
           <span class="visible">Send</span><div class="hidden absolute absolute-stretch items-center justify-center" />
         </div>
