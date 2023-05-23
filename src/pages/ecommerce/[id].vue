@@ -9,12 +9,16 @@ const id = computed(() => route.params.id)
 </script>
 
 <template>
-  <article>
+  <article class="max-w-75 ml15">
     <img :src="`https://via.placeholder.com/300x200.png?text=Product+${id}`" alt="Product 1">
-    <h3>Product {{ id }}</h3>
+    <h3 class="mt3 text-center">
+      Product {{ id }}
+    </h3>
     <p>
       {{ description }}
     </p>
-    <button>Add to Cart</button>
+    <button class=" px-3 py-2 rounded-2 transition-colors-300 shadow-[0px_4px_4px_#323232] b-1px hover:bg-slate-2 mt3">
+      Add to Cart
+    </button>
   </article>
 </template>
