@@ -13,7 +13,7 @@ const msg = ref('Let me know if you have any questions.')
     {{ msg }}
   </p>
   <div px-2 md:px-5 lg:px-6>
-    <form class="border-[#B2BDD4] bg-gray-8 text-white p-5 rounded-2 max-w-200 mx-auto my-2rem">
+    <form class="border-[#B2BDD4] bg-gray-8 max-w-200 text-white p-5 rounded-2 my-2rem mxa">
       <input
         id="Name" placeholder="Full name" class="px-5 text-white my-1 py-1 bg-transparent
       border-none focus:ring-none focus-visible:outline-none w-full truncate"
@@ -53,13 +53,13 @@ const msg = ref('Let me know if you have any questions.')
           />
         </div>
       </button>
-      <div class="flex mxa justify-between mt3">
+      <div class="flex mxa justify-center gap-4 mt3">
         <a
-          class="hover:text-red5 hover:no-underline text-blue-7"
+          class="rounded-3 py.5 px.6 hover:bg-slate-5 bg-slate6 text-gray"
           href="https://github.com/fabiennikolov" target="_blank"
         >GitHub</a>
         <a
-          class="hover:text-red5 hover:no-underline text-blue-7"
+          class="rounded-3 py.5 px.6 hover:bg-slate-5 bg-slate6 text-gray"
           href="https://www.instagram.com/fabch0/" target="_blank"
         > instagram</a>
         <a href="tel:0897474851" class="rounded-3 b-2 py.5 px.6 hover:bg-slate-5">
