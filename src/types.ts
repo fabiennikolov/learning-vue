@@ -4,6 +4,7 @@ declare global {
     description?: string
     image: string
     price: number
+    to?: string
   }
 
   interface Link {
