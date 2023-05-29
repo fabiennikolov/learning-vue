@@ -53,7 +53,7 @@ const msg = ref('Let me know if you have any questions.')
           />
         </div>
       </button>
-      <div class="flex mxa justify-center gap-4 mt3">
+      <div class="flex gap-4 mt3 place-content-evenly">
         <a
           class="rounded-3 py.5 px.6 hover:bg-slate-5 bg-slate6 text-gray"
           href="https://github.com/fabiennikolov" target="_blank"
