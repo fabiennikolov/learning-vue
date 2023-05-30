@@ -1,11 +1,4 @@
 declare global {
-  interface ProductCardData {
-    name: string
-    description?: string
-    image: string
-    price: number
-    to?: string
-  }
 
   interface Link {
     label: string
@@ -28,4 +21,10 @@ declare global {
   }
 }
 
-export {}
+export interface ProductCardData {
+  name: string
+  description?: string
+  image: string
+  price: number
+  to?: string
+}
