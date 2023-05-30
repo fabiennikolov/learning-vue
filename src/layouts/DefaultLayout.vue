@@ -12,11 +12,11 @@ const navItems = computed(() => {
 <template>
   <div class="sticky overflow-hidden ">
     <nav>
-      <router-link to="/home">
+      <router-link to="/">
         <img src="/src/components/icons/logo.png" inline-block max-w-15 my2>
       </router-link>
 
-      <router-link to="/home">
+      <router-link to="/">
         Home
       </router-link>
 

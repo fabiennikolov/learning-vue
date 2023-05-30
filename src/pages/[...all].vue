@@ -11,7 +11,7 @@
       <p>was not found</p>
     </div>
     <RouterLink
-      to="/home" text-25px uppercase bg-white position-relative display-inline-block
+      to="/" text-25px uppercase bg-white position-relative display-inline-block
       w358px p5px mb10px mt10px rounded-3 b-black b-2 hover:bg-slate-3
     >
       Go to homepage

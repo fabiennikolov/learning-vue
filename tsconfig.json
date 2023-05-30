@@ -1,14 +1,13 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "extends": "@vue/tsconfig/tsconfig.json",
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
-    "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
 
@@ -18,13 +17,14 @@
     },
     "types": [
       "vue",
-      "vue-router"
+      "vue-router",
+      "node"
     ]
   },
 
   "references": [
     {
-      "path": "./tsconfig.node.json"
+      "path": "./tsconfig.dom.json"
     }
   ]
 }
