@@ -1,9 +1,6 @@
 {
-<<<<<<< HEAD
   //"extends": "@vue/tsconfig/tsconfig.web.json",
-=======
   "extends": "@vue/tsconfig/tsconfig.json",
->>>>>>> origin
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
   "compilerOptions": {
     "target": "esnext",
