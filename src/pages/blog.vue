@@ -11,7 +11,7 @@ const cards = ref<ArticleCard[]>([
       label: 'learn more...',
       redirect: 'https://www.crowdbotics.com/blog-tags/front-end-development',
     },
-    image: 'src/components/icons/UXUIfeaturedimage-2.png',
+    image: 'src/assets/logos/UXUIfeaturedimage-2.png',
     description: 'Front end development refers to the work that software developers do that is directly visible to the user.',
   },
   {
@@ -20,7 +20,7 @@ const cards = ref<ArticleCard[]>([
       label: 'learn more...',
       redirect: 'https://www.crowdbotics.com/blog/python-vs-rust-which-is-better',
     },
-    image: 'src/components/icons/Python-vs.-Rust.png',
+    image: 'src/assets/logos/Python-vs.-Rust.png',
     description: 'Python and Rust, for example—they have a lot in common when it comes to how APIs should function, but thats where many of the similarities end',
 
   },
@@ -30,7 +30,7 @@ const cards = ref<ArticleCard[]>([
       label: 'learn more...',
       redirect: 'https://www.crowdbotics.com/blog/chatbots-in-the-workplace-pros-cons-and-best-practices',
     },
-    image: 'src/components/icons/AI---ML.png',
+    image: 'src/assets/logos/AI---ML.png',
     description: 'Whether you love them or hate them, chatbots are becoming more commonplace across many different industries. But should you implement this software at your organization?',
 
   },
@@ -40,7 +40,7 @@ const cards = ref<ArticleCard[]>([
       label: 'learn more...',
       redirect: 'https://www.crowdbotics.com/blog/a-guide-to-mobile-app-usability-testing-methods-tools-and-best-practices',
     },
-    image: 'src/components/icons/UX-UI-2.png',
+    image: 'src/assets/logos/UX-UI-2.png',
     description: 'Usability testing is a powerful tool you can use to evaluate the functionality of your mobile application and helps you ensure that users are able to navigate your app efficiently and effectively.',
   },
 ])
