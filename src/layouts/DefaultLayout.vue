@@ -10,10 +10,10 @@ const navItems = computed(() => {
 </script>
 
 <template>
-  <div class="sticky overflow-hidden ">
+  <div class="sticky overflow-hidden">
     <nav>
       <router-link to="/">
-        <img src="/src/components/icons/logo.png" inline-block max-w-15 my2>
+        <img src="@/assets/logos/logo.png" inline-block max-w-15 my2>
       </router-link>
 
       <router-link to="/">
