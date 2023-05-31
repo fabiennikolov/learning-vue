@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import ArticleCardSection from '@/components/ArticleCardSection.vue'
 
 const title = ref('Articles that might be helpful')
 const description = ref('Theese are some of the topics i am interested in.')

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import Card from '@/components/Card.vue'
 import type { ProductCardData } from '@/types'
 
 const title = ref('This is a sample ecommerce page')
