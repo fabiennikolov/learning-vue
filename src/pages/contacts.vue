@@ -15,7 +15,7 @@ const msg = ref('Let me know if you have any questions.')
     </button>
 
     <Teleport to="body">
-      <Modal :show="showModal" @close="showModal = false">
+      <Modal v-model:show="showModal">
         <template>
           <h3>Heading text</h3>
         </template>

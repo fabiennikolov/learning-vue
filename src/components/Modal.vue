@@ -1,7 +1,10 @@
 <script setup lang="ts">
-defineProps<{
-  show: boolean
-}>()
+import { defineModel } from 'vue'
+
+const show = defineModel<boolean>('show', {
+  required: true,
+  default: false,
+})
 </script>
 
 <template>
@@ -25,7 +28,7 @@ defineProps<{
             default footer
             <button
               class="modal-default-button"
-              @click="$emit('close')"
+              @click="show = false"
             >
               OK
             </button>
