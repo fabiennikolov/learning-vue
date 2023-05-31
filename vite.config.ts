@@ -23,7 +23,11 @@ export default defineConfig({
     AutoImport({
       dirs: ['src/composables', 'src/utils'],
       dts: true,
-      imports: ['vue', '@vueuse/core', 'vue-router'],
+      imports: ['vue', '@vueuse/core', 'vue-router', {
+        from: 'fabi',
+        imports: ['*'],
+        type: true,
+      }],
     }),
     Pages(),
     UnoCSS(),
