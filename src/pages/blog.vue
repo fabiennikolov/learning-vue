@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { ArticleCard } from '@/types'
+
 const title = ref('Articles that might be helpful')
 const description = ref('Theese are some of the topics i am interested in.')
 

@@ -1,13 +1,7 @@
 <script setup lang="ts">
-import Button from '@/components/Button.vue'
+import type { Card } from '@/types'
 
-defineProps<{
-  name: string
-  description?: string
-  image: string
-  price: number
-  to?: string
-}>()
+defineProps<Card>()
 </script>
 
 <template>

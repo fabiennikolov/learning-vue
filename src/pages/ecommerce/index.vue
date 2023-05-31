@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { ProductCardData } from '@/types'
+import type { Card as CardData } from '@/types'
 
 const title = ref('This is a sample ecommerce page')
 
-const products = ref<ProductCardData[]>([
+const products = ref<CardData[]>([
   { name: 'Product 1', image: 'Product+1', price: 13.99, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque risus aliquet sagittis iaculis.' },
   { name: 'Product 2', image: 'Product+2', price: 20.99, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque risus aliquet sagittis iaculis.' },
   { name: 'Product 3', image: 'Product+3', price: 110.99, description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque risus aliquet sagittis iaculis.' },
