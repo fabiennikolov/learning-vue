@@ -1,11 +1,27 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import Modal from '../components/Modal.vue'
+
+const showModal = ref(false)
 
 const title = ref('Contacts')
 const msg = ref('Let me know if you have any questions.')
 </script>
 
 <template>
+  <div class="home">
+    <button id="show-modal" @click="showModal = true">
+      Show Modal
+    </button>
+
+    <Teleport to="body">
+      <Modal :show="showModal" @close="showModal = false">
+        <template>
+          <h3>Heading text</h3>
+        </template>
+      </Modal>
+    </Teleport>
+  </div>
   <h2 text-center my5 text-5xl class="">
     {{ title }}
   </h2>
