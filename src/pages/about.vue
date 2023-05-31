@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const title = ref('About me')
 const description = ref('These are some of the technologies i am interested in.')
 

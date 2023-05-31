@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const title = ref('Hi, I am Fab')
 const description = ref('I am learning web development using Vue3. In my spare time I enjoy playing chess and building my own projects.')
 const msg = ref('Here in this website im creating my first responsive website layout for different type of pages')

@@ -1,7 +1,10 @@
 {
   //"extends": "@vue/tsconfig/tsconfig.web.json",
   "extends": "@vue/tsconfig/tsconfig.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "components.d.ts"],
+  "include": [
+    "env.d.ts", "src/**/*", "src/**/*.vue", 
+    "components.d.ts", "auto-imports.d.ts"
+], 
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
