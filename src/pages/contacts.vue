@@ -12,11 +12,7 @@ const msg = ref('Let me know if you have any questions.')
     </button>
 
     <Teleport to="body">
-      <Modal v-model:show="showModal">
-        <template>
-          <h3>Heading text</h3>
-        </template>
-      </Modal>
+      <Modal v-model:show="showModal" />
     </Teleport>
   </div>
   <h2 text-center my5 text-5xl class="">
@@ -68,11 +64,11 @@ const msg = ref('Let me know if you have any questions.')
       </button>
       <div class="flex gap-4 mt3 place-content-evenly">
         <a
-          class="rounded-3 py.5 px.6 hover:bg-slate-5 bg-slate6 text-gray"
+          class="rounded-3 py.5 px.6 hover:bg-slate-5 bg-slate6 b-white b-2"
           href="https://github.com/fabiennikolov" target="_blank"
         >GitHub</a>
         <a
-          class="rounded-3 py.5 px.6 hover:bg-slate-5 bg-slate6 text-gray"
+          class="rounded-3 py.5 px.6 hover:bg-slate-5 bg-slate6 b-white b-2"
           href="https://www.instagram.com/fabch0/" target="_blank"
         > instagram</a>
         <a href="tel:0897474851" class="rounded-3 b-2 py.5 px.6 hover:bg-slate-5">

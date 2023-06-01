@@ -9,27 +9,22 @@ const show = defineModel<boolean>('show', {
   <Transition name="modal">
     <div v-if="show" class="modal-mask">
       <div class="modal-container">
-        <div class="text-emerald-5">
+        <button
+          class="modal-default-button b-1 rounded-2 px3
+          bg-slate-2 hover:bg-gray-4 b-black mb3 ml60"
+          @click="show = false"
+        >
+          X
+        </button>
+        <div class="text-3xl mb5 text-center">
           <slot name="header">
-            default header
+            Thank you for your message !
           </slot>
         </div>
 
-        <div class="modal-body">
+        <div class="modal-body mb3 text-center">
           <slot name="body">
-            default body
-          </slot>
-        </div>
-
-        <div class="modal-footer">
-          <slot name="footer">
-            default footer
-            <button
-              class="modal-default-button"
-              @click="show = false"
-            >
-              OK
-            </button>
+            We will contact you as soon as possible !
           </slot>
         </div>
       </div>
@@ -45,7 +40,7 @@ const show = defineModel<boolean>('show', {
 }
 
 .modal-container {
-  --uno: w-75 mx-auto px-8 py-6 rounded-2
+  --uno: w-75 mt75 mx-auto p3 py-3 rounded-2
     bg-white transition-all-300 ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
 }
