@@ -21,7 +21,7 @@ const show = defineModel<boolean>('show', {
             Thank you for your message !
           </slot>
         </div>
-
+        <br>
         <div class="modal-body mb3 text-center">
           <slot name="body">
             We will contact you as soon as possible !
