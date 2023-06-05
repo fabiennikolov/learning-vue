@@ -2,7 +2,7 @@
 import AboutCard from '@/components/AboutCard.vue'
 
 defineProps<{
-  cards: AccountCard[]
+  cards: AboutCard[]
 }>()
 </script>
 
