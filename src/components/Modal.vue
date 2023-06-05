@@ -11,7 +11,7 @@ const show = defineModel<boolean>('show', {
       <div class="modal-container">
         <button
           class="modal-default-button b-1 rounded-2 px3
-          bg-slate-2 hover:bg-gray-4 b-black mb3 ml60"
+            bg-slate-2 hover:bg-gray-4 b-black mb3 ml60"
           @click="show = false"
         >
           X
