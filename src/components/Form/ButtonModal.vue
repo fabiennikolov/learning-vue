@@ -4,7 +4,7 @@
 <template>
   <button
     class="b-1 rounded-2 px3
-    bg-slate-2 hover:bg-gray-4
+    bg-slate-2 hover:bg-gray-3
      b-black my2 w-full"
   >
     Close

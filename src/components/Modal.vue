@@ -11,7 +11,7 @@ const show = defineModel<boolean>('show', {
       <div class="modal-container">
         <button
           class="modal-default-button b-1 rounded-2 px3
-            bg-slate-2 hover:bg-gray-4 b-black mb3 ml60"
+            bg-slate-2 hover:bg-gray-3 b-black mb3 ml60"
           @click="show = false"
         >
           X
@@ -36,13 +36,13 @@ const show = defineModel<boolean>('show', {
 <style>
 .modal-mask {
   --uno: fixed top-0 left-0
-  bg-black/50 w-full h-full
+  bg-black/60 w-full h-full
   transition-opacity-300 isolate;
 }
 
 .modal-container {
   --uno: w-75 mt75 mx-auto p3 py-3 rounded-2
-    bg-white transition-all-300 ease;
+    bg-white transition-all-300 bg-blue1 ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
 }
 
