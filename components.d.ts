@@ -17,6 +17,8 @@ declare module '@vue/runtime-core' {
     Button: typeof import('./src/components/Button.vue')['default']
     Card: typeof import('./src/components/Card.vue')['default']
     DefaultLayout: typeof import('./src/layouts/DefaultLayout.vue')['default']
+    FormInput: typeof import('./src/components/Form/Input.vue')['default']
+    FormTextarea: typeof import('./src/components/Form/Textarea.vue')['default']
     Modal: typeof import('./src/components/Modal.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
