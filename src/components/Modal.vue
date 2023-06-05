@@ -27,14 +27,7 @@ const show = defineModel<boolean>('show', {
             We will contact you as soon as possible !
           </slot>
         </div>
-        <button
-          class="b-1 rounded-2 px3
-            bg-slate-2 hover:bg-gray-4
-             b-black mb3 ml26"
-          @click="show = false"
-        >
-          Close
-        </button>
+        <FormButtonModal @click="show = false" />
       </div>
     </div>
   </Transition>
