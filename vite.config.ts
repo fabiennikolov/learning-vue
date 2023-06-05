@@ -19,14 +19,16 @@ export default defineConfig({
     Components({
       dirs: ['src/layouts', 'src/components'],
       dts: true,
+      directoryAsNamespace: true,
     }),
     AutoImport({
       dirs: ['src/composables', 'src/utils'],
       dts: true,
       imports: ['vue', '@vueuse/core', 'vue-router', {
-        from: 'fabi',
-        imports: ['*'],
-        type: true,
+        axios: [
+
+          ['default', 'axios'],
+        ],
       }],
     }),
     Pages(),
