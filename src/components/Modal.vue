@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const title = ref('Thank you for your message !')
+const description = ref('We will contact you as soon as possible !')
+
 const show = defineModel<boolean>('show', {
   required: true,
   default: false,
@@ -18,13 +21,13 @@ const show = defineModel<boolean>('show', {
         </button>
         <div class="text-3xl mb5 text-center">
           <slot name="header">
-            Thank you for your message !
+            {{ title }}
           </slot>
         </div>
         <br>
         <div class="modal-body mb3 text-center">
           <slot name="body">
-            We will contact you as soon as possible !
+            {{ description }}
           </slot>
         </div>
         <FormButtonModal @click="show = false" />
