@@ -10,7 +10,7 @@ const msg = ref('Here in this website im creating my first responsive website la
     overflow-hidden bg-slate-2
     space-y-6 ma mb-3 rounded-3 b-3 b-slate-3"
   >
-    <h1 text-40px my-2 ml3 text-5xl>
+    <h1 text-40px my-2 ml3 text-5xl font-500>
       {{ title }}
     </h1>
     <div text-xl grid gap-4 ml3 leading-10 text-5 tracking-wider>

@@ -12,7 +12,7 @@ const products = ref<CardData[]>([
 </script>
 
 <template>
-  <h1 class="text-center text-4xl my5">
+  <h1 class="text-center text-4xl my5 font-500">
     {{ title }}
   </h1>
   <section flex items-center gap-4 flex-wrap justify-center text-center>
