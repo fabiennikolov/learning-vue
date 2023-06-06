@@ -12,10 +12,10 @@ const products = ref<CardData[]>([
 </script>
 
 <template>
-  <h1 class="text-center text-4xl my5 font-500">
+  <h1 class="my5 text-center text-4xl font-500">
     {{ title }}
   </h1>
-  <section flex items-center gap-4 flex-wrap justify-center text-center>
+  <section flex flex-wrap items-center justify-center gap-4 text-center>
     <Card
       v-for="product in products" :key="product.name"
       v-bind="product" :image="`https://via.placeholder.com/600x400?text=${product.image}`"
