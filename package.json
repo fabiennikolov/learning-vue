@@ -20,6 +20,7 @@
     "@antfu/eslint-config": "^0.38.5",
     "@rushstack/eslint-patch": "^1.2.0",
     "@types/node": "^18.14.2",
+    "@unocss/eslint-config": "^0.53.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/eslint-config-typescript": "^11.0.3",
     "@vue/tsconfig": "^0.4.0",
