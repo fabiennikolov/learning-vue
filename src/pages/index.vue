@@ -33,32 +33,27 @@ const msg = ref('Here in this website im creating my first responsive website la
       class=" space-x-3"
     >
       <router-link
-        to="/blog" text-25px uppercase bg-white display-inline-block p5px mb10px mt10px
-        rounded-3 b-black b-2 hover:bg-slate-3 text-center
+        to="/blog" class="home-link"
       >
         Blog page
       </router-link>
       <router-link
-        to="/ecommerce" text-25px uppercase bg-white display-inline-block p5px mb10px
-        mt10px rounded-3 b-black b-2 hover:bg-slate-3 text-center
+        to="/ecommerce" class="home-link"
       >
         E-commerce
       </router-link>
       <router-link
-        to="/contacts" text-25px uppercase bg-white display-inline-block p5px mb10px
-        mt10px rounded-3 b-black b-2 hover:bg-slate-3 text-center
+        to="/contacts" class="home-link"
       >
         Contacts page
       </router-link>
       <router-link
-        to="/contacts1" text-25px uppercase bg-white display-inline-block p5px mb10px
-        mt10px rounded-3 b-black b-2 hover:bg-slate-3 text-center
+        to="/contacts1" class="home-link"
       >
         404 page
       </router-link>
       <router-link
-        to="/about" text-25px uppercase bg-white display-inline-block p5px mb10px mt10px
-        rounded-3 b-black b-2 hover:bg-slate-3 text-center
+        to="/about" class="home-link"
       >
         about page
       </router-link>
