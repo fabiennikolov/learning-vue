@@ -7,6 +7,7 @@ import {
 export default defineConfig({
   shortcuts: [
     { 'form-link': 'rounded-3 py-1 px-2 hover:bg-slate-5 b-white b-2 transition-colors-300' },
+    { 'home-link': 'text-25px uppercase bg-white display-inline-block p5px mb10px mt10px rounded-3 b-black b-2 hover:bg-slate-3 text-center' },
   ],
   presets: [
     presetUno(),
