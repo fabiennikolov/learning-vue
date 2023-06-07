@@ -5,7 +5,7 @@ defineProps<Card>()
 </script>
 
 <template>
-  <div max-w-75 overflow-hidden b-2px rounded-2 bg-slate-3>
+  <div class="max-w-75 overflow-hidden b-2px b-black/25 rounded-2 bg-slate-3">
     <img :src="image" :alt="name" mb-5>
     <div class="px-5 py-7 space-y-6">
       <h3>{{ name }}</h3>
@@ -14,8 +14,10 @@ defineProps<Card>()
       </p>
       <div flex flex-col items-center justify-center gap-2>
         <strong>BGN {{ price }}</strong>
-        <Button>Add to Cart</Button>
-        <RouterLink v-if="to" :to="to" hover:text-blue hover:underline>
+        <Button>
+          Add to Cart
+        </Button>
+        <RouterLink v-if="to" :to="to" class="border-1 b-black/80 rounded-2 bg-slate2 px2 text-black/90 transition-all-200 hover:scale-105 hover:bg-blue4 hover:text-white">
           Show details
         </RouterLink>
       </div>
