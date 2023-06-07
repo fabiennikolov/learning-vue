@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="mx-auto  max-w-300 p-4 grid gap-6 lg:grid-cols-4 lt-lg:w-fit justify-center">
+  <div class="grid mx-auto max-w-300 justify-center gap-6 p-4 lg:grid-cols-4 lt-lg:w-fit">
     <ArticleCard
       v-for="card in cards" :key="card.title"
       v-bind="card"

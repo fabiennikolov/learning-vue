@@ -1,13 +1,13 @@
 <template>
-  <div text-center b-black b-2 class="bg-#8abcbc">
-    <div class="text-220px display-inline-block h450px tracking-15px">
+  <div b-2 b-black text-center class="bg-#8abcbc">
+    <div class="display-inline-block h450px text-220px tracking-15px">
       <h1>404</h1>
-      <hr class="b-t-5px text-center w400px h10px">
+      <hr class="h10px w400px b-t-5px text-center">
     </div>
-    <div class="uppercase text-center tracking-12px text-4em">
+    <div class="text-center text-4em tracking-12px uppercase">
       <p>the page</p>
     </div>
-    <div class="uppercase text-45px text-center w100%">
+    <div class="w100% text-center text-45px uppercase">
       <p>was not found</p>
     </div>
     <RouterLink

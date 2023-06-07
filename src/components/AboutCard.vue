@@ -12,24 +12,24 @@ defineProps<{
 
 <template>
   <div
-    b="4 slate" p-4 sm:p-8 max-w-75 w-full
-    rounded-3 overflow-hidden bg-slate-6
-    space-y-6
+    b="4 slate"
+
+    max-w-75 w-full overflow-hidden rounded-3 bg-slate-6 p-4 space-y-6 sm:p-8
   >
-    <h4 class="font-inter font-extrabold text-(2xl center) leading-relaxed">
+    <h4 class="font-inter text-(center 2xl) font-extrabold leading-relaxed">
       {{ title }}
     </h4>
     <div flex="~ col" items-center gap-3>
-      <div w-50 h-40>
-        <img :src="image" object-contain mx-auto h-full>
+      <div h-40 w-50>
+        <img :src="image" mx-auto h-full object-contain>
       </div>
       <a
-        inline-block mx-auto font-medium text-sm
+        mx-auto inline-block text-sm font-medium
         :href="link.redirect" target="_blank"
       >
         {{ link.label }}</a>
     </div>
-    <p v-if="description" class="mt10px leading-7 text-white text-center">
+    <p v-if="description" class="mt10px text-center leading-7 text-white">
       {{ description }}
     </p>
   </div>

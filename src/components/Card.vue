@@ -5,9 +5,9 @@ defineProps<Card>()
 </script>
 
 <template>
-  <div max-w-75 rounded-2 overflow-hidden bg-slate-3 b-2px>
+  <div max-w-75 overflow-hidden b-2px rounded-2 bg-slate-3>
     <img :src="image" :alt="name" mb-5>
-    <div class="space-y-6 px-5 py-7">
+    <div class="px-5 py-7 space-y-6">
       <h3>{{ name }}</h3>
       <p>
         {{ description }}
