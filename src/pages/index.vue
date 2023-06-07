@@ -8,7 +8,7 @@ const msg = ref('Here in this website im creating my first responsive website la
   <div
     class="ma mb-3 max-w-300 w-full overflow-hidden b-3 b-slate-3 rounded-3 bg-slate-2 p-4 space-y-6 sm:p-8"
   >
-    <h1 my-2 ml3 text-40px text-5xl font-500>
+    <h1 my-2 ml3 text-40px text-4xl font-500>
       {{ title }}
     </h1>
     <div grid ml3 gap-4 text-5 text-xl leading-10 tracking-wider>
