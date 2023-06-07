@@ -12,19 +12,19 @@ defineProps<{
 
 <template>
   <div
-    b="4 slate"
+    b="2 gray"
 
-    max-w-75 w-full overflow-hidden rounded-3 bg-slate-6 p-4 space-y-6 sm:p-8
+    class="max-w-75 w-full overflow-hidden rounded-3 bg-slate-6 p-4 space-y-6 sm:p-8"
   >
-    <h4 class="font-inter text-(center 2xl) font-extrabold leading-relaxed">
+    <h4 class="font-inter text-(center 2xl) font-extrabold leading-relaxed transition-all-300 hover:scale-110">
       {{ title }}
     </h4>
-    <div flex="~ col" items-center gap-3>
-      <div h-40 w-50>
-        <img :src="image" mx-auto h-full object-contain>
+    <div flex="~ col" class="items-center gap-3">
+      <div class="h-40 w-50">
+        <img :src="image" class="mx-auto h-full object-contain">
       </div>
       <a
-        mx-auto inline-block text-sm font-medium
+        class="mx-auto inline-block text-sm font-medium transition-all-300 hover:scale-110"
         :href="link.redirect" target="_blank"
       >
         {{ link.label }}</a>
