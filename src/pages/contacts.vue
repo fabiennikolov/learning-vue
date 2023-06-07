@@ -20,7 +20,7 @@ async function submit() {
 </script>
 
 <template>
-  <h2 my5 text-center text-5xl>
+  <h2 my5 text-center text-4xl font-500>
     {{ title }}
   </h2>
 

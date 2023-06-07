@@ -47,7 +47,7 @@ const cards = ref<ArticleCard[]>([
 </script>
 
 <template>
-  <h2 style="text-align:center" my5 text-4xl>
+  <h2 style="text-align:center" my5 text-4xl font-500>
     {{ title }}
   </h2>
   <p my1 text-center text-6>

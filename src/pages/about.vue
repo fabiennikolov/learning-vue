@@ -49,7 +49,7 @@ const cards = ref<AccountCard[]>([
 </script>
 
 <template>
-  <h2 style="text-align:center" my5 text-5xl>
+  <h2 style="text-align:center" my5 text-4xl font-500>
     {{ title }}
   </h2>
   <p my1 text-center text-2xl>
