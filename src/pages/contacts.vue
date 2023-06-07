@@ -11,12 +11,6 @@ const form = reactive({
   comment: '',
 })
 
-const modal = ref<HTMLElement | null>(null)
-
-onClickOutside(modal, () => {
-  showModal.value = false
-})
-
 const loading = ref(false)
 async function submit() {
   loading.value = true
@@ -26,31 +20,29 @@ async function submit() {
 </script>
 
 <template>
-  <h2 text-center my5 text-5xl>
+  <h2 my5 text-center text-5xl>
     {{ title }}
   </h2>
 
-  <p text-center my1 text-2xl>
+  <p my1 text-center text-2xl>
     {{ msg }}
   </p>
 
   <form @submit.prevent="submit">
-    <div px-2 md:px-5 lg:px-6>
-      <div class="border-[#B2BDD4] bg-gray-8 max-w-200 text-white p-5 rounded-2 my-2rem mxa">
+    <div px-2 lg:px-6 md:px-5>
+      <div class="mxa my-2rem max-w-200 border-[#B2BDD4] rounded-2 bg-gray-8 p-5 text-white">
         <FormInput id="Name" v-model="form.name" placeholder="Full name" />
         <FormInput id="Email" v-model="form.email" type="email" placeholder="Email" />
         <FormInput id="Number" v-model="form.number" placeholder="Number" />
         <FormTextarea id="comment" v-model="form.comment" placeholder="Comment..." />
 
         <button
-          id="show-modal" class="hover:bg-slate-5 mt10 rounded-full text-black px-5 py-4 w-full relative
-        transition-colors-250 bg-gray-7 text-white font-500 hover:after:opacity-65
-        after:z-0 after:absolute after:transition-all-250 text-center" type="submit"
+          id="show-modal" class="relative mt10 w-full rounded-full bg-gray-7 px-5 py-4 text-center font-500 text-black text-white transition-colors-250 after:absolute after:z-0 hover:bg-slate-5 after:transition-all-250 hover:after:opacity-65" type="submit"
           @click="showModal = true"
         >
           Send
         </button>
-        <div class="flex gap-4 mt3 place-content-evenly">
+        <div class="mt3 flex place-content-evenly gap-4">
           <a
             class="form-link"
             href="https://github.com/fabiennikolov" target="_blank"
@@ -66,7 +58,7 @@ async function submit() {
     </div>
   </form>
 
-  <Teleport ref="modal" to="body">
+  <Teleport to="body">
     <Modal v-model:show="showModal" />
   </Teleport>
 </template>
