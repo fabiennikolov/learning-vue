@@ -37,7 +37,7 @@ async function submit() {
         <FormTextarea id="comment" v-model="form.comment" placeholder="Comment..." />
 
         <button
-          id="show-modal" class="relative mt10 w-full rounded-full bg-gray-7 px-5 py-4 text-center font-500 text-black text-white transition-colors-250 after:absolute after:z-0 hover:bg-slate-5 after:transition-all-250 hover:after:opacity-65" type="submit"
+          id="show-modal" class="relative mt10 w-full b-1 b-gray rounded-full bg-gray-7 px-5 py-4 text-center font-500 text-white transition-colors-250 after:absolute after:z-0 hover:bg-slate-5 after:transition-all-250 hover:after:opacity-65" type="submit"
           @click="showModal = true"
         >
           Send
