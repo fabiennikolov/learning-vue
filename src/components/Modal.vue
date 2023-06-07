@@ -6,20 +6,22 @@ const show = defineModel<boolean>('show', {
   required: true,
   default: false,
 })
+
+const modal = ref<HTMLDivElement | null>(null)
+onClickOutside(modal, () => show.value = false)
 </script>
 
 <template>
   <Transition name="modal">
     <div v-if="show" class="modal-mask">
-      <div class="modal-container">
+      <div ref="modal" class="modal-container">
         <button
-          class="modal-default-button b-1 rounded-2 px3
-            bg-slate-2 hover:bg-gray-3 b-black mb3 ml60"
+          class="modal-default-button mb3 ml60 b-1 b-black rounded-2 bg-slate-2 px3 hover:bg-gray-3"
           @click="show = false"
         >
           X
         </button>
-        <div class="text-3xl mb5 text-center">
+        <div class="mb5 text-center text-3xl">
           <slot name="header">
             {{ title }}
           </slot>
@@ -40,11 +42,12 @@ const show = defineModel<boolean>('show', {
 .modal-mask {
   --uno: fixed top-0 left-0
   bg-black/60 w-full h-full
-  transition-opacity-300 isolate;
+  transition-opacity-300
+  grid place-items-center;
 }
 
 .modal-container {
-  --uno: w-75 mt75 mx-auto p3 py-3 rounded-2
+  --uno: w-75 p3 py-3 rounded-2
     bg-white transition-all-300 bg-blue1 ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
 }
