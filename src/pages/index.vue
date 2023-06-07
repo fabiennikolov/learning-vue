@@ -15,11 +15,11 @@ const msg = ref('Here in this website im creating my first responsive website la
       <p mt1rem>
         {{ description }}
         <br> I'm on <a
-          class="text-blue-7 hover:text-red5 hover:no-underline"
+          class="social-link"
           href="https://github.com/fabiennikolov" target="_blank"
         >GitHub</a>
         <a
-          class="text-blue-7 hover:text-red5 hover:no-underline"
+          class="social-link"
           href="https://www.instagram.com/fabch0/" target="_blank"
         > instagram</a><br>
         {{ msg }}
