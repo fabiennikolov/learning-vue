@@ -13,7 +13,7 @@ const navItems = computed(() => {
   <div class="sticky overflow-hidden">
     <nav>
       <router-link to="/">
-        <img src="@/assets/logos/logo.png" inline-block max-w-15 my2>
+        <img src="@/assets/logos/logo.png" my2 inline-block max-w-15>
       </router-link>
 
       <router-link to="/">
@@ -59,7 +59,7 @@ nav > *:not(:first-child) {
 }
 
 nav a {
-  --uno: text-[#8abcbc] hover:text-lime underline;
+  --uno:  text-[#8abcbc] hover:text-lime;
   transition-property: text-decoration-color, color;
   transition-duration: 500ms;
   transition-timing-function: ease;
@@ -69,9 +69,9 @@ nav a {
 }
 
 nav a:hover {
+  --uno: hover:scale-140 transition-all-350
   color: greenyellow;
   text-decoration-color: greenyellow;
-  text-decoration: underline;
 }
  section {
   margin: 20px;
