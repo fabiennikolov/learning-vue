@@ -3,9 +3,7 @@
 
 <template>
   <button
-    class="b-1 rounded-2 px3
-    bg-slate-2 hover:bg-gray-3
-     b-black my2 w-full"
+    class="my2 w-full b-1 b-black rounded-2 bg-slate-2 px3 hover:bg-gray-3"
   >
     Close
   </button>
