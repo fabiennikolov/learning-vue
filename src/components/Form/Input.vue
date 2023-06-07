@@ -5,9 +5,6 @@ const modelValue = defineModel<string>()
 <template>
   <input
     v-model="modelValue"
-    class="px-5 text-white my-1 py-2 bg-transparent
-        border-b-1 border-slate-1 outline-none
-        focus:(ring-none bg-gray-7) transition-colors-300
-        rounded-t-lg w-full truncate"
+    class="my-1 w-full truncate border-b-1 border-slate-1 rounded-t-lg bg-transparent px-5 py-2 text-white outline-none transition-colors-300 focus:(bg-gray-7 ring-none)"
   >
 </template>
