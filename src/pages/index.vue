@@ -6,31 +6,29 @@ const msg = ref('Here in this website im creating my first responsive website la
 
 <template>
   <div
-    class="p-4 sm:p-8 max-w-300 w-full
-    overflow-hidden bg-slate-2
-    space-y-6 ma mb-3 rounded-3 b-3 b-slate-3"
+    class="ma mb-3 max-w-300 w-full overflow-hidden b-3 b-slate-3 rounded-3 bg-slate-2 p-4 space-y-6 sm:p-8"
   >
-    <h1 text-40px my-2 ml3 text-5xl font-500>
+    <h1 my-2 ml3 text-40px text-5xl font-500>
       {{ title }}
     </h1>
-    <div text-xl grid gap-4 ml3 leading-10 text-5 tracking-wider>
+    <div grid ml3 gap-4 text-5 text-xl leading-10 tracking-wider>
       <p mt1rem>
         {{ description }}
         <br> I'm on <a
-          class="hover:text-red5 hover:no-underline text-blue-7"
+          class="text-blue-7 hover:text-red5 hover:no-underline"
           href="https://github.com/fabiennikolov" target="_blank"
         >GitHub</a>
         <a
-          class="hover:text-red5 hover:no-underline text-blue-7"
+          class="text-blue-7 hover:text-red5 hover:no-underline"
           href="https://www.instagram.com/fabch0/" target="_blank"
         > instagram</a><br>
         {{ msg }}
       </p>
     </div>
   </div>
-  <div class="bg-slate-2 text-center max-w-300 ma w-full rounded-3 b-3 b-slate-3">
+  <div class="ma max-w-300 w-full b-3 b-slate-3 rounded-3 bg-slate-2 text-center">
     <div
-      class=" space-x-3"
+      class="space-x-3"
     >
       <router-link
         to="/blog" class="home-link"
