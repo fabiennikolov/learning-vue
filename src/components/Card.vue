@@ -17,7 +17,7 @@ defineProps<Card>()
         <Button>
           Add to Cart
         </Button>
-        <RouterLink v-if="to" :to="to" class="border-1 b-black/80 rounded-2 bg-slate2 px2 text-black/90 transition-all-200 hover:scale-105 hover:bg-blue4 hover:text-white">
+        <RouterLink v-if="to" :to="to" class="border-1 b-black/40 rounded-2 bg-slate2 px2 text-black/90 transition-all-200 hover:scale-105 hover:bg-gray hover:text-white">
           Show details
         </RouterLink>
       </div>
