@@ -69,7 +69,7 @@ nav a {
 }
 
 nav a:hover {
-  --uno: hover:scale-140 transition-all-350
+  --uno: hover:scale-120 transition-all-500
   color: greenyellow;
   text-decoration-color: greenyellow;
 }
