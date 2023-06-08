@@ -16,21 +16,27 @@ onClickOutside(modal, () => show.value = false)
     <div v-if="show" class="modal-mask">
       <div ref="modal" class="modal-container">
         <button
-          class="modal-default-button mb3 ml60 b-1 b-black rounded-2 bg-slate-2 px3 hover:bg-gray-3"
+          class="modal-default-button mb2 ml60 b-1 b-black rounded-2 bg-slate-2 px3 hover:bg-gray-3"
           @click="show = false"
         >
           X
         </button>
-        <div class="mb5 text-center text-3xl">
+        <div class="mb2 text-center text-3xl">
           <slot name="header">
             {{ title }}
           </slot>
         </div>
         <br>
-        <div class="modal-body mb3 text-center">
+        <div class="modal-body text-center">
           <slot name="body">
             {{ description }}
           </slot>
+        </div>
+        <div class="mb5">
+          <label class="ml7 text-center">
+            <p class="mb2 font-500">Subscribe to our newsletter</p>
+            <input type="text" placeholder="email" class="input input-bordered input-xs ml1 b-1 b-black rounded-2 px2" @keyup.enter="show = false">
+          </label>
         </div>
         <FormButtonModal @click="show = false" />
       </div>
