@@ -20,11 +20,11 @@ async function submit() {
 </script>
 
 <template>
-  <h2 my5 text-center text-4xl font-500>
+  <h2 class="my5 text-center text-4xl font-500">
     {{ title }}
   </h2>
 
-  <p my1 text-center text-2xl>
+  <p class="my1 text-center text-2xl">
     {{ msg }}
   </p>
 
