@@ -33,6 +33,17 @@ const navItems = computed(() => {
     </main>
     <footer>
       <p>&copy; {{ footermsg }}</p>
+      <router-link to="/">
+        Home
+      </router-link>
+
+      <RouterLink
+        v-for="route in navItems"
+        :key="route.name"
+        :to="route.path" class="capitalize"
+      >
+        {{ route.name }}
+      </RouterLink>
     </footer>
   </div>
 </template>
@@ -70,8 +81,7 @@ nav a {
 
 nav a:hover {
   --uno: hover:scale-120 transition-all-500
-  color: greenyellow;
-  text-decoration-color: greenyellow;
+
 }
  section {
   margin: 20px;
@@ -96,6 +106,19 @@ footer {
   color: white;
   text-align: center;
   padding: 5rem;
+  background-color: #444;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  justify-content: space-around;
+  --uno:  text-[#8abcbc]
+}
+footer a:hover {
+  --uno: hover:scale-120 transition-all-500 text-lime
 }
 img {
   transition: transform 0.3s ease;
