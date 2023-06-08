@@ -13,20 +13,25 @@ const navItems = computed(() => {
   <div class="sticky overflow-hidden">
     <nav>
       <router-link to="/">
-        <img src="@/assets/logos/logo.png" my2 inline-block max-w-15>
+        <img src="@/assets/logos/logo.png" class="my2 inline-block max-w-15">
       </router-link>
 
-      <router-link to="/">
+      <router-link to="/" class="uppercase">
         Home
       </router-link>
 
       <RouterLink
         v-for="route in navItems"
         :key="route.name"
-        :to="route.path" class="capitalize"
+        :to="route.path" class="uppercase"
       >
         {{ route.name }}
       </RouterLink>
+      <div class="my2 ml100 inline-block max-w-10">
+        <router-link to="/cart">
+          <img src="src/assets/logos/cart.png" class="">
+        </router-link>
+      </div>
     </nav>
     <main>
       <slot />
@@ -62,11 +67,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-}
-
-nav > *:not(:first-child) {
-  margin-left: 1rem;
+  gap: 4rem;
 }
 
 nav a {
@@ -113,7 +114,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 4rem;
   --uno:  text-[#8abcbc]
 }
 footer a:hover {
