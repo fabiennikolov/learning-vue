@@ -113,8 +113,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  justify-content: space-around;
+  gap: 3rem;
   --uno:  text-[#8abcbc]
 }
 footer a:hover {
