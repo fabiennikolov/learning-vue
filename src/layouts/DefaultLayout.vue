@@ -104,11 +104,9 @@ article {
 
 footer {
   background-color: #333;
-  color: white;
   text-align: center;
   padding: 5rem;
   background-color: #444;
-  color: white;
   padding: 1rem;
   text-align: center;
   display: flex;
