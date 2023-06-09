@@ -29,8 +29,8 @@
             Total Price &euro; 137.00
           </div>
         </div>
-        <button class="mxa mt-5 inline-block w-50% justify-center b-black rounded-2 bg-black p2 text-3 font-400 color-white lg:w-27% md:w-27% hover:bg-gray-9">
-          CHECKOUT
+        <button class="mxa mt-5 inline-block w-50% justify-center b-black rounded-2 bg-black p2 text-3 font-400 uppercase color-white lg:w-27% md:w-27% hover:bg-gray-9">
+          Checkout
         </button>
       </div>
     </div>
