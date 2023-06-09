@@ -27,7 +27,7 @@ const navItems = computed(() => {
       >
         {{ route.name }}
       </RouterLink>
-      <div class="my2 ml100 inline-block max-w-10">
+      <div class="my2 inline-block max-w-10">
         <router-link to="/cart">
           <img src="src/assets/logos/cart.png" class="">
         </router-link>
@@ -67,7 +67,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  gap: 2rem;
 }
 
 nav a {
