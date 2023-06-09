@@ -11,7 +11,7 @@ const navItems = computed(() => {
 
 <template>
   <div class="sticky overflow-hidden">
-    <nav>
+    <nav class="mxa w-100% flex items-center justify-center gap-8 bg-#444 p4 text-center">
       <router-link to="/">
         <img src="@/assets/logos/logo.png" class="my2 inline-block max-w-15">
       </router-link>
@@ -36,16 +36,18 @@ const navItems = computed(() => {
     <main>
       <slot />
     </main>
-    <footer>
-      <p>&copy; {{ footermsg }}</p>
-      <router-link to="/">
+    <footer class="flex justify-center gap-8 bg-#444 p8 text-center text-[#8abcbc]">
+      <div class="footermsg">
+        <p>&copy; {{ footermsg }}</p>
+      </div>
+      <router-link to="/" class="uppercase">
         Home
       </router-link>
 
       <RouterLink
         v-for="route in navItems"
         :key="route.name"
-        :to="route.path" class="capitalize"
+        :to="route.path" class="uppercase"
       >
         {{ route.name }}
       </RouterLink>
@@ -54,25 +56,6 @@ const navItems = computed(() => {
 </template>
 
 <style>
-header {
-  background-color: #333;
-  color: white;
-  text-align: center;
-}
-nav {
-  background-color: #444;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  width:100%;
-  gap: 2rem;
-}
-
 nav a {
   --uno:  text-[#8abcbc] hover:text-lime;
   transition-property: text-decoration-color, color;
@@ -103,20 +86,6 @@ article {
   border: 1px solid #ddd;
   padding: 10px;
   max-width: 25rem;
-}
-
-footer {
-  background-color: #333;
-  text-align: center;
-  padding: 5rem;
-  background-color: #444;
-  padding: 1rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-  --uno:  text-[#8abcbc]
 }
 footer a:hover {
   --uno: hover:scale-120 transition-all-500 text-lime
