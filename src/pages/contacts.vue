@@ -30,7 +30,7 @@ async function submit() {
 
   <form @submit.prevent="submit">
     <div px-2 lg:px-6 md:px-5>
-      <div class="mxa my-2rem max-w-200 border-[#B2BDD4] rounded-2 bg-gray-8 p-5 text-white">
+      <div class="b-transparent shadow-lg drop-shadow-xl mxa my-2rem max-w-200 border-[#B2BDD4] rounded-2 bg-gray-8 p-8 text-white">
         <FormInput id="Name" v-model="form.name" placeholder="Full name" />
         <FormInput id="Email" v-model="form.email" type="email" placeholder="Email" />
         <FormInput id="Number" v-model="form.number" placeholder="Number" />
