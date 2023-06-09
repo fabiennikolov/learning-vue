@@ -17,7 +17,8 @@ const products = ref<CardData[]>([
   </h1>
   <section class="flex flex-wrap items-center justify-center gap-4 text-center">
     <Card
-      v-for="product in products" :key="product.name"
+      v-for="product in products"
+      :key="product.name" class="b-transparent shadow-md drop-shadow-xl"
       v-bind="product" :image="`https://via.placeholder.com/600x400?text=${product.image}`"
       :to="`/ecommerce/${product.name.split(' ')[1]}`"
     />

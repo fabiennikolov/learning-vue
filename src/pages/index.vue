@@ -6,27 +6,27 @@ const msg = ref('Here in this website im creating my first responsive website la
 
 <template>
   <div
-    class="ma mb-3 max-w-300 w-full overflow-hidden b-3 b-slate-3 rounded-3 bg-slate-2 p-4 space-y-6 sm:p-8"
+    class="ma mb-3 max-w-300 w-full overflow-hidden b-2 b-slate-3 b-transparent rounded-3 rounded-4 bg-slate-2 p-4 shadow-lg lg:mxa space-y-6 sm:p-8"
   >
-    <h1 my-2 ml3 text-40px text-4xl font-500>
+    <h1 class="my-2 ml3 text-40px text-4xl font-500">
       {{ title }}
     </h1>
-    <div grid ml3 gap-4 text-5 text-xl leading-10 tracking-wider>
-      <p mt1rem>
+    <div class="grid ml3 gap-4 text-5 text-xl leading-10 tracking-wider">
+      <p class="mt1rem">
         {{ description }}
         <br> I'm on <a
-          class="social-link transition-all-350"
+          class="transition-all-350 social-link"
           href="https://github.com/fabiennikolov" target="_blank"
         >GitHub</a>
         <a
-          class="social-link transition-all-350"
+          class="transition-all-350 social-link"
           href="https://www.instagram.com/fabch0/" target="_blank"
         > instagram</a><br>
         {{ msg }}
       </p>
     </div>
   </div>
-  <div class="ma max-w-300 w-full b-3 b-slate-3 rounded-3 bg-slate-2 text-center">
+  <div class="ma max-w-300 w-full b-3 b-slate-3 b-transparent rounded-3 rounded-4 bg-slate-2 text-center shadow-lg lg:mxa">
     <div
       class="space-x-3"
     >
