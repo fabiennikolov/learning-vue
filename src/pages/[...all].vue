@@ -1,6 +1,6 @@
 <template>
-  <div class="b-2 b-black bg-#8abcbc text-center">
-    <div class="display-inline-block h70 text-220px tracking-15px">
+  <div class="h100% b-1 b-black bg-#8abcbc text-center">
+    <div class="display-inline-block h70 text-220px tracking-3">
       <h1>404</h1>
       <hr class="h4 w100 b-t-5 p0 text-center">
     </div>

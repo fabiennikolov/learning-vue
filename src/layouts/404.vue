@@ -1,5 +1,5 @@
 <template>
-  <div b-2 b-black text-center class="bg-#8abcbc">
+  <div class="class b-2 b-black bg-#8abcbc text-center">
     <div class="display-inline-block h450px text-220px tracking-15px">
       <h1>404</h1>
       <hr class="h10px w400px b-t-5px text-center">
