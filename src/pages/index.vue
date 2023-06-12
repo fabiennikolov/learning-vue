@@ -5,7 +5,7 @@ const msg = ref('Here in this website im creating my first responsive website la
 </script>
 
 <template>
-  <div mxa my-4 px-4 sm:mxa lg:max-w-200 sm:max-w-150>
+  <div class="mxa my-4 px-4 sm:mxa lg:max-w-200 sm:max-w-150">
     <div
       class="ma mb-3 b-2 b-slate-3 b-transparent rounded-3 rounded-4 bg-slate-2 p-4 shadow-lg space-y-6"
     >
@@ -16,11 +16,11 @@ const msg = ref('Here in this website im creating my first responsive website la
         <p class="mt1rem">
           {{ description }}
           <br> I'm on <a
-            class="transition-all-350 social-link"
+            class="ml1 p1 home-link"
             href="https://github.com/fabiennikolov" target="_blank"
           >GitHub</a>
           <a
-            class="transition-all-350 social-link"
+            class="ml2 p1 home-link"
             href="https://www.instagram.com/fabch0/" target="_blank"
           > instagram</a><br>
           {{ msg }}
