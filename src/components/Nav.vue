@@ -25,7 +25,7 @@ const navItems = computed(() => {
       </label>
     </div>
 
-    <div class="nav-links float-right">
+    <div class="nav-links">
       <RouterLink
         v-for="route in navItems"
         :key="route.name"
@@ -33,6 +33,9 @@ const navItems = computed(() => {
       >
         {{ route.name }}
       </RouterLink>
+      <router-link to="/cart" class="mt2 uppercase">
+        Cart
+      </router-link>
     </div>
   </div>
 </template>
@@ -49,6 +52,7 @@ const navItems = computed(() => {
   background-color: #666;
   position: relative;
   z-index: 1;
+  font-size: small;
 }
 
 .nav > .nav-header {
@@ -69,7 +73,7 @@ const navItems = computed(() => {
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 20px 10px 13px 10px;
+  padding: 1rem 1rem 5px 1rem;
   text-decoration: none;
   color: #8abcbc;
 }
@@ -122,7 +126,7 @@ const navItems = computed(() => {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(15rem);
+    height: calc(14rem);
     overflow-y: auto;
   }
 }
