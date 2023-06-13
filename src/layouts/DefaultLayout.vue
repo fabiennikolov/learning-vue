@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import router from '@/router'
-
-const footermsg = ref('2023 My Website. All rights reserved.')
 
 const navItems = computed(() => {
   return router.getRoutes().filter(route => route.meta.showOnNavbar)
@@ -28,7 +26,7 @@ const navItems = computed(() => {
         {{ route.name }}
       </RouterLink>
       <div class="footermsg">
-        <p>&copy; {{ footermsg }}</p>
+        <p>&copy; 2023 My Website. All rights reserved. </p>
       </div>
     </footer>
   </div>

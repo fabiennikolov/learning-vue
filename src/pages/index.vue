@@ -1,8 +1,4 @@
 <script setup lang="ts">
-const title = ref('Hi, I am Fab')
-const description = ref('I am learning web development using Vue3. In my spare time I enjoy playing chess and building my own projects.')
-const msg = ref('Here in this website im creating my first responsive website layout for different type of pages')
-
 interface ItemLink {
   to: string
   label: string
@@ -24,11 +20,11 @@ const followLinks: ItemLink[] = [
         class="px-4 mb-3 b-2 b-slate-3 b-transparent rounded-3 rounded-4 bg-slate-2 p-4 shadow-lg space-y-6"
       >
         <h1 class="my-2 text-40px text-4xl font-500">
-          {{ title }}
+          Hi, I am Fab
         </h1>
         <div class="grid gap-4 text-5 text-xl leading-10 tracking-normal">
           <p class="">
-            {{ description }}
+            I am learning web development using Vue3. In my spare time I enjoy playing chess and building my own projects.
             <br> I'm on <br><a
               class="p1 home-link"
               href="https://github.com/fabiennikolov" target="_blank"
@@ -37,7 +33,7 @@ const followLinks: ItemLink[] = [
               class="ml2 p1 home-link"
               href="https://www.instagram.com/fabch0/" target="_blank"
             > instagram</a><br>
-            {{ msg }}
+            Here in this website im creating my first responsive website layout for different type of pages
           </p>
         </div>
       </div>
