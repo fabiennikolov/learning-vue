@@ -116,7 +116,7 @@ const navItems = computed(() => {
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top:4.5rem;
+    top:4rem;
   }
   .nav > .nav-links > a {
     display: block;
