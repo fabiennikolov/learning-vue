@@ -13,7 +13,7 @@ const navItems = computed(() => {
     <div class="nav-header">
       <div class="nav-title">
         <router-link to="/">
-          <img src="@/assets/logos/logo.png" class="my5 inline-block max-w-15">
+          <img src="@/assets/logos/logo.png" class="my3 inline-block max-w-15">
         </router-link>
       </div>
     </div>
@@ -25,7 +25,7 @@ const navItems = computed(() => {
       </label>
     </div>
 
-    <div class="nav-links">
+    <div class="nav-links pt-3">
       <RouterLink
         v-for="route in navItems"
         :key="route.name"
@@ -33,7 +33,7 @@ const navItems = computed(() => {
       >
         {{ route.name }}
       </RouterLink>
-      <router-link to="/cart" class="mt2 uppercase">
+      <router-link to="/cart" class="uppercase">
         Cart
       </router-link>
     </div>
@@ -61,14 +61,13 @@ const navItems = computed(() => {
 
 .nav > .nav-btn {
   display: none;
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   justify-content:center;
 }
 
 .nav > .nav-links {
   display: inline;
   justify-content: center;
-  margin-top: .80rem;
 }
 
 .nav > .nav-links > a {
