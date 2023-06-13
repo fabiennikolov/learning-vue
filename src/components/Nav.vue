@@ -45,20 +45,6 @@ const navItems = computed(() => {
   box-sizing: border-box;
 }
 
-.nav {
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  background-color: #666;
-  position: relative;
-  z-index: 1;
-  font-size: small;
-}
-
-.nav > .nav-header {
-  display: inline;
-}
-
 .nav > .nav-btn {
   display: none;
   margin-top: 1rem;
@@ -68,6 +54,7 @@ const navItems = computed(() => {
 .nav > .nav-links {
   display: inline;
   justify-content: center;
+  z-index: 2;
 }
 
 .nav > .nav-links > a {
@@ -125,7 +112,7 @@ const navItems = computed(() => {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(17rem);
+    height: calc(18rem);
     overflow-y: auto;
   }
 }
