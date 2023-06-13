@@ -18,7 +18,7 @@ const followLinks: ItemLink[] = [
 </script>
 
 <template>
-  <div px-8 lg:px-4>
+  <div class="px-8 lg:px-4 py-8 lg:py-4">
     <div class="mx-auto max-w-200 flex flex-col items-center">
       <div
         class="px-4 mb-3 b-2 b-slate-3 b-transparent rounded-3 rounded-4 bg-slate-2 p-4 shadow-lg space-y-6"
