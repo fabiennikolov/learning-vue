@@ -13,7 +13,7 @@ const navItems = computed(() => {
     <main>
       <slot />
     </main>
-    <footer class="flex flex-wrap justify-center gap-4 bg-#444 p8 text-center text-12px text-[#8abcbc]">
+    <footer class="flex flex-wrap justify-center gap-4 bg-#444 p8 text-center text-12px lg:text-1rem text-[#8abcbc]">
       <router-link to="/" class="uppercase">
         Home
       </router-link>
