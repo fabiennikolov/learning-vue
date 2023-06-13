@@ -21,6 +21,7 @@ declare module '@vue/runtime-core' {
     FormInput: typeof import('./src/components/Form/Input.vue')['default']
     FormTextarea: typeof import('./src/components/Form/Textarea.vue')['default']
     Modal: typeof import('./src/components/Modal.vue')['default']
+    Nav: typeof import('./src/components/Nav.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Skeleton: typeof import('./src/components/Skeleton.vue')['default']
