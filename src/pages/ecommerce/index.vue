@@ -15,7 +15,7 @@ const products = ref<CardData[]>([
   <h1 class="my5 text-center text-4xl font-500">
     {{ title }}
   </h1>
-  <section class="flex flex-wrap items-center justify-center gap-4 text-center">
+  <section class="m8 flex flex-wrap items-center justify-center gap-4 text-center">
     <Card
       v-for="product in products"
       :key="product.name" class="b-transparent shadow-md drop-shadow-xl"
