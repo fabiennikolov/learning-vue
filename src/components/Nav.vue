@@ -8,7 +8,7 @@ const navItems = computed(() => {
 </script>
 
 <template>
-  <div class="nav flex justify-center gap-8 bg-#555 text-start text-[#8abcbc]">
+  <div class="nav flex justify-center gap-8 bg-#555 text-start text-[#8abcbc] text-12px lg:text-1rem">
     <input id="nav-check" type="checkbox">
     <div class="nav-header">
       <div class="nav-title">
@@ -65,7 +65,7 @@ const navItems = computed(() => {
 }
 
 .nav > .nav-links > a:hover {
-  --uno: lg:hover:scale-120 transition-all-500 hover:text-white
+  --uno: lg:hover:scale-120 transition-all-500 hover:text-white bg-gray-3/10 lg:bg-transparent
 }
 
 .nav > #nav-check {
@@ -112,7 +112,7 @@ const navItems = computed(() => {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(18rem);
+    height: calc(16rem);
     overflow-y: auto;
   }
 }
