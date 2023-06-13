@@ -25,7 +25,7 @@ const navItems = computed(() => {
       </label>
     </div>
 
-    <div class="nav-links pt-3">
+    <div class="nav-links ma">
       <RouterLink
         v-for="route in navItems"
         :key="route.name"
@@ -72,13 +72,13 @@ const navItems = computed(() => {
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 1rem 1rem 5px 1rem;
+  padding: 1rem;
   text-decoration: none;
   color: #8abcbc;
 }
 
 .nav > .nav-links > a:hover {
-  --uno: lg:hover:scale-120 transition-all-500 hover:text-lime
+  --uno: lg:hover:scale-120 transition-all-500 hover:text-white
 }
 
 .nav > #nav-check {
@@ -112,11 +112,11 @@ const navItems = computed(() => {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #555;
+    background-color: rgba(11, 11, 11, 0.7);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top:4rem;
+    top:4.55rem;
   }
   .nav > .nav-links > a {
     display: block;
@@ -125,7 +125,7 @@ const navItems = computed(() => {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(14rem);
+    height: calc(17rem);
     overflow-y: auto;
   }
 }
