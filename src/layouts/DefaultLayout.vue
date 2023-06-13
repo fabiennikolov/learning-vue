@@ -27,7 +27,7 @@ const navItems = computed(() => {
       >
         {{ route.name }}
       </RouterLink>
-      <div class="footermsg text-.75rem">
+      <div class="footermsg">
         <p>&copy; {{ footermsg }}</p>
       </div>
     </footer>
@@ -36,7 +36,7 @@ const navItems = computed(() => {
 
 <style>
 footer a:hover {
-  --uno: hover:scale-120 transition-all-500 text-lime
+  --uno: hover:scale-120 transition-all-500 text-white
 }
 img {
   transition: transform 0.3s ease;
