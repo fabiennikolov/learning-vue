@@ -12,7 +12,7 @@ const id = computed(() => route.params.id)
   <h1 class="mb3 text-center text-4xl font-500">
     {{ title }} {{ id }}
   </h1>
-  <article class="grid mxa mt10 max-w-75 place-items-center b-1 b-black/25 rounded-3 bg-slate2 p3">
+  <article class="grid mxa mt10 max-w-75 place-items-center b-transparent rounded-3 bg-slate2 p3 shadow-md drop-shadow-xl">
     <div relative w-full>
       <img aspect-ratio="3/2" :src="`https://via.placeholder.com/300x200.png?text=Product+${id}`" alt="Product 1" relative z-1 w-full>
       <div class="absolute inset-0 z-0">
