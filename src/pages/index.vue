@@ -26,11 +26,11 @@ const followLinks: ItemLink[] = [
         <h1 class="my-2 text-40px text-4xl font-500">
           {{ title }}
         </h1>
-        <div class="grid gap-4 text-5 text-xl leading-10 tracking-wider">
+        <div class="grid gap-4 text-5 text-xl leading-10 tracking-normal">
           <p class="">
             {{ description }}
-            <br> I'm on <a
-              class="ml1 p1 home-link"
+            <br> I'm on <br><a
+              class="p1 home-link"
               href="https://github.com/fabiennikolov" target="_blank"
             >GitHub</a>
             <a
@@ -43,7 +43,7 @@ const followLinks: ItemLink[] = [
       </div>
       <div class="ma max-w-300 w-full b-3 b-slate-3 b-transparent rounded-3 rounded-4 bg-slate-2 px-4 py-2 text-center shadow-lg lg:mxa">
         <div
-          class="space-x-3"
+          class="space-x-2"
         >
           <RouterLink
             v-for="link in followLinks" :key="link.label"
