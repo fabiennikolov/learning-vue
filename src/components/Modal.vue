@@ -50,6 +50,7 @@ onClickOutside(modal, () => show.value = false)
   bg-black/60 w-full h-full
   transition-opacity-300
   grid place-items-center;
+  z-index: 2;
 }
 
 .modal-container {
