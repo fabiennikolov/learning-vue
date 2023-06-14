@@ -1,7 +1,4 @@
 <script setup lang="ts">
-const title = ref('Thank you for your message !')
-const description = ref('We will contact you as soon as possible !')
-
 const show = defineModel<boolean>('show', {
   required: true,
   default: false,
@@ -23,13 +20,13 @@ onClickOutside(modal, () => show.value = false)
         </button>
         <div class="mb2 text-center text-3xl">
           <slot name="header">
-            {{ title }}
+            <p>Thank you for your message !</p>
           </slot>
         </div>
         <br>
         <div class="modal-body text-center">
           <slot name="body">
-            {{ description }}
+            <p>We will contact you as soon as possible !</p>
           </slot>
         </div>
         <div class="mb5">
