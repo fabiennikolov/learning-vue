@@ -17,7 +17,7 @@ const navItems = computed(() => {
         </router-link>
       </div>
     </div>
-    <div class="nav-btn">
+    <div class="nav-btn mt3 justify-center mr2">
       <label for="nav-check">
         <span />
         <span />
@@ -25,7 +25,7 @@ const navItems = computed(() => {
       </label>
     </div>
 
-    <div class="nav-links ma">
+    <div class="nav-links ma inline justify-center z-2">
       <RouterLink
         v-for="route in navItems"
         :key="route.name"
@@ -45,18 +45,6 @@ const navItems = computed(() => {
   box-sizing: border-box;
 }
 
-.nav > .nav-btn {
-  display: none;
-  margin-top: 1rem;
-  justify-content:center;
-}
-
-.nav > .nav-links {
-  display: inline;
-  justify-content: center;
-  z-index: 2;
-}
-
 .nav > .nav-links > a {
   display: inline-block;
   padding: 1rem;
@@ -64,7 +52,7 @@ const navItems = computed(() => {
   color: #8abcbc;
 }
 
-.nav > .nav-links > a:hover {
+a:hover {
   --uno: lg:hover:scale-120 transition-all-500 hover:text-white bg-gray-3/10 lg:bg-transparent
 }
 
@@ -81,10 +69,8 @@ const navItems = computed(() => {
   }
   .nav > .nav-btn > label {
     display: inline-block;
-    width: 3rem;
-    padding: 13px;
+    padding: 1rem;
     padding-bottom: 5px;
-    margin-right: 1rem;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.1);
