@@ -1,16 +1,23 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import router from '@/router'
+
+const navCheckbox = ref(null)
 
 const navItems = computed(() => {
   return router.getRoutes().filter(route => route.meta.showOnNavbar)
 })
+
+function closeNav() {
+  if (navCheckbox.value)
+    navCheckbox.value.checked = false
+}
 </script>
 
 <template>
   <div class="flex justify-center gap-8 bg-#555 text-start text-[#8abcbc] text-12px lg:text-1rem">
     <div class="nav flex justify-center gap-8 bg-#555 text-start text-[#8abcbc] text-12px lg:text-1rem">
-      <input id="nav-check" type="checkbox">
+      <input id="nav-check" ref="navCheckbox" type="checkbox">
       <div class="nav-header">
         <div class="nav-title">
           <router-link to="/">
@@ -18,7 +25,7 @@ const navItems = computed(() => {
           </router-link>
         </div>
       </div>
-      <div class="nav-btn mt3 justify-center mr2">
+      <div class="nav-btn mt3 justify-center">
         <label for="nav-check">
           <span />
           <span />
@@ -30,6 +37,7 @@ const navItems = computed(() => {
           v-for="route in navItems"
           :key="route.name"
           :to="route.path" class="uppercase"
+          @click="closeNav"
         >
           {{ route.name }}
         </RouterLink>
@@ -86,7 +94,7 @@ a:hover {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: rgba(11, 11, 11, 0.7);
+    background-color: #555;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
