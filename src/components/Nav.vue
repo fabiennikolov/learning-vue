@@ -8,34 +8,35 @@ const navItems = computed(() => {
 </script>
 
 <template>
-  <div class="nav flex justify-center gap-8 bg-#555 text-start text-[#8abcbc] text-12px lg:text-1rem">
-    <input id="nav-check" type="checkbox">
-    <div class="nav-header">
-      <div class="nav-title">
-        <router-link to="/">
-          <img src="@/assets/logos/logo.png" class="my3 inline-block max-w-15">
+  <div class="flex justify-center gap-8 bg-#555 text-start text-[#8abcbc] text-12px lg:text-1rem">
+    <div class="nav flex justify-center gap-8 bg-#555 text-start text-[#8abcbc] text-12px lg:text-1rem">
+      <input id="nav-check" type="checkbox">
+      <div class="nav-header">
+        <div class="nav-title">
+          <router-link to="/">
+            <img src="@/assets/logos/logo.png" class="my3 inline-block max-w-15">
+          </router-link>
+        </div>
+      </div>
+      <div class="nav-btn mt3 justify-center mr2">
+        <label for="nav-check">
+          <span />
+          <span />
+          <span />
+        </label>
+      </div>
+      <div class="nav-links ma inline justify-center z-2">
+        <RouterLink
+          v-for="route in navItems"
+          :key="route.name"
+          :to="route.path" class="uppercase"
+        >
+          {{ route.name }}
+        </RouterLink>
+        <router-link to="/cart" class="uppercase">
+          Cart
         </router-link>
       </div>
-    </div>
-    <div class="nav-btn mt3 justify-center mr2">
-      <label for="nav-check">
-        <span />
-        <span />
-        <span />
-      </label>
-    </div>
-
-    <div class="nav-links ma inline justify-center z-2">
-      <RouterLink
-        v-for="route in navItems"
-        :key="route.name"
-        :to="route.path" class="uppercase"
-      >
-        {{ route.name }}
-      </RouterLink>
-      <router-link to="/cart" class="uppercase">
-        Cart
-      </router-link>
     </div>
   </div>
 </template>
