@@ -25,7 +25,7 @@ function closeNav() {
           </router-link>
         </div>
       </div>
-      <div class="nav-btn mt3 justify-center">
+      <div class="nav-btn mt3 justify-center lg:display-none">
         <label for="nav-check">
           <span />
           <span />
