@@ -30,6 +30,6 @@
   "references": [
     {
       "path": "./tsconfig.dom.json"
-    }
+    },
   ]
 }
