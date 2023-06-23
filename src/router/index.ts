@@ -1,3 +1,4 @@
+import { setupLayouts } from 'virtual:generated-layouts'
 import routes from '~pages'
 
-export default routes
+export default setupLayouts(routes)
