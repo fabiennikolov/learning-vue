@@ -1,13 +1,7 @@
 <script setup lang="ts">
-defineProps<{
-  title: string
-  description?: string
-  image: string
-  link: {
-    label: string
-    redirect: string
-  }
-}>()
+import type { CardProps } from '@/types'
+
+defineProps<CardProps>()
 </script>
 
 <template>

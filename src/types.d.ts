@@ -20,9 +20,19 @@ export interface AccountCard {
   link: Link
   class?: string
 }
-export interface ArticleCard {
+export interface ArticleCardProps {
   title: string
   description?: string
   image: string
   link: Link
+}
+
+export interface CardProps {
+  title: string
+  description?: string
+  image: string
+  link: {
+    label: string
+    redirect: string
+  }
 }

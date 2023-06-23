@@ -2,7 +2,7 @@
 import { computed, ref } from 'vue'
 import router from '@/router'
 
-const navCheckbox = ref(null)
+const navCheckbox = ref<HTMLInputElement | null>(null)
 
 const navItems = computed(() => {
   return router.getRoutes().filter(route => route.meta.showOnNavbar)

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { ArticleCard } from '@/types'
+import type { CardProps } from '@/types'
 
 const title = ref('Articles that might be helpful')
 const description = ref('Theese are some of the topics i am interested in.')
 
-const cards = ref<ArticleCard[]>([
+const cards = ref<CardProps[]>([
   {
     title: 'What is Front End Development?',
     link: {

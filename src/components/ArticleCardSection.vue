@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import ArticleCard from '@/components/ArticleCard.vue'
+import type { CardProps } from '@/types'
 
 defineProps<{
-  cards: ArticleCard[]
+  cards: CardProps[]
 }>()
 </script>
 

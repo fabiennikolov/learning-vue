@@ -6,10 +6,10 @@ export const useCubicCounter = defineStore('cubic-counter', () => {
   const cubicCount = computed(() => count.value ** 3)
 
   function increment() {
-    count.value++
+    count.value!++
   }
   function decrement() {
-    count.value--
+    count.value!--
   }
 
   return { count, cubicCount, increment, decrement }
