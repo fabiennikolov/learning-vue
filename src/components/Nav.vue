@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-import router from '@/router'
+import { ref } from 'vue'
 
 const navCheckbox = ref<HTMLInputElement | null>(null)
 
 const navItems = computed(() => {
-  return router.getRoutes().filter(route => route.meta.showOnNavbar)
+  return useRouter().getRoutes().filter(route => route.meta!.showOnNavbar)
 })
 
 function closeNav() {
@@ -26,11 +25,7 @@ function closeNav() {
         </div>
       </div>
       <div class="nav-btn mt3 justify-center lg:display-none">
-        <label for="nav-check">
-          <span />
-          <span />
-          <span />
-        </label>
+        <label for="nav-check" />
       </div>
       <div class="nav-links ma inline justify-center z-2">
         <RouterLink
