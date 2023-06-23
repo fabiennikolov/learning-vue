@@ -24,8 +24,12 @@ function closeNav() {
           </router-link>
         </div>
       </div>
-      <div class="nav-btn mt3 justify-center lg:display-none">
-        <label for="nav-check" />
+      <div class="nav-btn mt3 right-0 top-0 justify-center lg:display-none mr2">
+        <label for="nav-check">
+          <span />
+          <span />
+          <span />
+        </label>
       </div>
       <div class="nav-links ma inline justify-center z-2">
         <RouterLink
@@ -57,7 +61,7 @@ function closeNav() {
 }
 
 a:hover {
-  --uno: lg:hover:scale-120 transition-all-500 hover:text-white bg-gray-3/10 lg:bg-transparent
+  --uno: transition-all-500 hover:text-white bg-gray-3/10 lg:bg-transparent
 }
 
 .nav > #nav-check {
@@ -68,8 +72,7 @@ a:hover {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
-    right: 0px;
-    top: 0px;
+
   }
   .nav > .nav-btn > label {
     display: inline-block;
@@ -80,7 +83,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.1);
   }
   .nav > .nav-btn > label > span {
-    display: block;
+    display: flex;
     width: 25px;
     height: 10px;
     border-top: 2px solid #eee;
