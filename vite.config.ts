@@ -1,7 +1,6 @@
 import { URL, fileURLToPath } from 'node:url'
 import UnoCSS from 'unocss/vite'
 import Pages from 'vite-plugin-pages'
-import { unheadVueComposablesImports } from '@unhead/vue'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -26,8 +25,7 @@ export default defineConfig({
       dirs: ['src/composables', 'src/utils'],
       dts: true,
       imports: [
-        'vue', '@vueuse/core', 'vue-router',
-        unheadVueComposablesImports,
+        'vue', '@vueuse/core', '@vueuse/head', 'vue-router',
         { axios: [['default', 'axios']] },
       ],
     }),
