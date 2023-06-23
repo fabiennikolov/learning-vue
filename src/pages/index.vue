@@ -10,6 +10,7 @@ const followLinks: ItemLink[] = [
   { label: 'Contacts', to: '/contacts' },
   { label: 'About', to: '/about' },
   { label: 'Cart', to: '/cart' },
+  { label: 'Login', to: '/auth/login' },
 ]
 </script>
 
