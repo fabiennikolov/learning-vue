@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import type { ActiveToast } from 'vue-toast-notification'
-import { useToast } from 'vue-toast-notification'
+
+// import { useToast } from 'vue-toast-notification'
 import type { Card } from '@/types'
 import 'vue-toast-notification/dist/theme-sugar.css'
 
@@ -9,12 +10,12 @@ defineProps<Card>()
 
 const toastInstance = ref<ActiveToast>()
 
-const $toast = useToast()
+// const $toast = useToast()
 
 function showToast() {
-  toastInstance.value = $toast.success('Item added to cart!', {
-    position: 'top-right',
-  })
+  // toastInstance.value = $toast.success('Item added to cart!', {
+  // position: 'top-right',
+  // })
 }
 </script>
 
