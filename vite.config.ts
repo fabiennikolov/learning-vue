@@ -1,6 +1,7 @@
 import { URL, fileURLToPath } from 'node:url'
 import UnoCSS from 'unocss/vite'
 import Pages from 'vite-plugin-pages'
+import { unheadVueComposablesImports } from '@unhead/vue'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -24,12 +25,11 @@ export default defineConfig({
     AutoImport({
       dirs: ['src/composables', 'src/utils'],
       dts: true,
-      imports: ['vue', '@vueuse/core', 'vue-router', {
-        axios: [
-
-          ['default', 'axios'],
-        ],
-      }],
+      imports: [
+        'vue', '@vueuse/core', 'vue-router',
+        unheadVueComposablesImports,
+        { axios: [['default', 'axios']] },
+      ],
     }),
     Pages(),
     UnoCSS(),
@@ -37,6 +37,13 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
+  ssgOptions: {
+    script: 'async',
+    formatting: 'minify',
+    crittersOptions: {
+      reduceInlineStyles: false,
     },
   },
 })
