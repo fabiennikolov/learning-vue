@@ -15,6 +15,7 @@ declare module '@vue/runtime-core' {
     ArticleCardSection: typeof import('./src/components/ArticleCardSection.vue')['default']
     Button: typeof import('./src/components/Button.vue')['default']
     Card: typeof import('./src/components/Card.vue')['default']
+    Dafault: typeof import('./src/layouts/dafault.vue')['default']
     DefaultLayout: typeof import('./src/layouts/DefaultLayout.vue')['default']
     FormButtonModal: typeof import('./src/components/Form/ButtonModal.vue')['default']
     FormInput: typeof import('./src/components/Form/Input.vue')['default']

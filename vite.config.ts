@@ -1,6 +1,7 @@
 import { URL, fileURLToPath } from 'node:url'
 import UnoCSS from 'unocss/vite'
 import Pages from 'vite-plugin-pages'
+import Layouts from 'vite-plugin-vue-layouts'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -31,12 +32,14 @@ export default defineConfig({
     }),
     Pages(),
     UnoCSS(),
+    Layouts(),
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
