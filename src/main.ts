@@ -1,5 +1,4 @@
 import { createPinia } from 'pinia'
-import ToastPlugin from 'vue-toast-notification'
 import { ViteSSG } from 'vite-ssg'
 import App from './App.vue'
 import routes from './router'
@@ -24,6 +23,5 @@ export const createApp = ViteSSG(
 
     app
       .use(pinia)
-      .use(ToastPlugin)
   },
 )
